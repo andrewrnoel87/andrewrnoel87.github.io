@@ -2,7 +2,7 @@
 layout: post
 title:  "First test Post"
 date:   2023-09-11 11:44:35 -0400
-categories: test
+categories: jekyll update
 ---
 
 Let's do this thing, Leeroy!

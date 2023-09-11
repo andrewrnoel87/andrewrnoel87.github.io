@@ -2,7 +2,7 @@
 layout: post
 title:  "Second Post"
 date:   2023-09-11 16:35:00 -0400
-categories: blog
+categories: jekyll update
 ---
 Today I'm setting up the blog.
 
