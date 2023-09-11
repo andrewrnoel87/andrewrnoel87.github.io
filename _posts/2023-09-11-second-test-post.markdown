@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Second Post"
 date:   2023-09-11 16:35:00 -0400
 categories: jekyll update
