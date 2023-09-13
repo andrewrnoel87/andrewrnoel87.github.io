@@ -16,8 +16,9 @@ The objective was to write a program that asks the user to input five strings an
 Then, the program should ask the user to input three numbers in the range 0 to 4, inclusive (these numbers represent the list indices).
 Finally, the program should use these numbers to access the three strings at the corresponding indices in the previously created list, concatenate them, and print out the resulting string.
 
-Here is my solution.\n
-_____________________________________________________________________________________________________________
+Here is my solution.
+
+"""
 
 lst = []
 index = []
@@ -32,13 +33,15 @@ for i in range(3):
 for i in range(len(index)):
     output = output + lst[index[i]]
 
-print(output)\n
-_____________________________________________________________________________________________________________
+print(output)
+
+"""
 
 I want to rewrite this in java at some point. Going to stay focused on the lesson for now.
 
 Here are example solutions the course provide.
-_____________________________________________________________________________________________________________
+
+""" Solution 1 """
 
 string1 = input("Enter a string: ")
 string2 = input("Enter a string: ")
@@ -54,8 +57,8 @@ num3 = int(input("Enter a number: "))
 
 final_string = strings[num1] + strings[num2] + strings[num3]
 print(final_string)
-____________________________________________________________________________________________________________
-____________________________________________________________________________________________________________
+
+""" Solution 2 """
 
 string1 = input("Enter a string: ")
 string2 = input("Enter a string: ")
@@ -77,8 +80,7 @@ num3 = int(input("Enter a number: "))
 final_string = strings[num1] + strings[num2] + strings[num3]
 print(final_string)
 
-___________________________________________________________________________________________________________
-___________________________________________________________________________________________________________
+""" Solution 3"""
 
 strings = [
     input("Enter a string: "),
@@ -95,7 +97,7 @@ num3 = int(input("Enter a number: "))
 final_string = strings[num1] + strings[num2] + strings[num3]
 print(final_string)
 
-__________________________________________________________________________________________________________
+"""
 
 I find it interesting that there are multiple solutions. Based on the solutions provided, I feel like I wasn't
 supposed to be using 'for' loops yet.
