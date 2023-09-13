@@ -1,0 +1,11 @@
+---
+layout: default
+title:  "Refreshing the Fundamentals"
+date:   2023-09-13 14:30:00 -0400
+categories: blog
+---
+Studying from the programmingexpert.io course today. The course is teaching using Python. I am using the course to refresh many of the things I learned in college. 
+
+I went through Data Types, Comments, Variables and Printing, Console Input, and Arithmetic Operators before I started this blog.
+
+Today I covered Type Conversions, Conditions, Compound Conditions, Conditionals, Lists, and Strings.
