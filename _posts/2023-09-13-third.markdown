@@ -4,8 +4,100 @@ title:  "Refreshing the Fundamentals"
 date:   2023-09-13 14:30:00 -0400
 categories: blog
 ---
-Studying from the programmingexpert.io course today. The course is teaching using Python. I am using the course to refresh many of the things I learned in college. 
+Studying from the [programmingexpert.io][course-site] course today. The course is teaching using Python. I am using the course to refresh many of the things I learned in college. 
 
 I went through Data Types, Comments, Variables and Printing, Console Input, and Arithmetic Operators before I started this blog.
 
-Today I covered Type Conversions, Conditions, Compound Conditions, Conditionals, Lists, and Strings.
+Today I covered Type Conversions, Conditions, Compound Conditions, Conditionals, and Lists.
+
+I enjoyed this problem from today's exercises.
+
+The objective was to write a program that asks the user to input five strings and store them in a list.
+Then, the program should ask the user to input three numbers in the range 0 to 4, inclusive (these numbers represent the list indices).
+Finally, the program should use these numbers to access the three strings at the corresponding indices in the previously created list, concatenate them, and print out the resulting string.
+
+Here is my solution.
+_____________________________________________________________________________________________________________
+
+lst = []
+index = []
+output = ""
+
+for i in range(5):
+    lst.append(input("Enter a string: "))
+
+for i in range(3):
+    index.append(int(input("Enter a number: ")))
+
+for i in range(len(index)):
+    output = output + lst[index[i]]
+
+print(output)
+_____________________________________________________________________________________________________________
+
+I want to rewrite this in java at some point. Going to stay focused on the lesson for now.
+
+Here are example solutions the course provide.
+_____________________________________________________________________________________________________________
+
+string1 = input("Enter a string: ")
+string2 = input("Enter a string: ")
+string3 = input("Enter a string: ")
+string4 = input("Enter a string: ")
+string5 = input("Enter a string: ")
+
+strings = [string1, string2, string3, string4, string5]
+
+num1 = int(input("Enter a number: "))
+num2 = int(input("Enter a number: "))
+num3 = int(input("Enter a number: "))
+
+final_string = strings[num1] + strings[num2] + strings[num3]
+print(final_string)
+____________________________________________________________________________________________________________
+____________________________________________________________________________________________________________
+
+string1 = input("Enter a string: ")
+string2 = input("Enter a string: ")
+string3 = input("Enter a string: ")
+string4 = input("Enter a string: ")
+string5 = input("Enter a string: ")
+
+strings = []
+strings.append(string1)
+strings.append(string2)
+strings.append(string3)
+strings.append(string4)
+strings.append(string5)
+
+num1 = int(input("Enter a number: "))
+num2 = int(input("Enter a number: "))
+num3 = int(input("Enter a number: "))
+
+final_string = strings[num1] + strings[num2] + strings[num3]
+print(final_string)
+
+___________________________________________________________________________________________________________
+___________________________________________________________________________________________________________
+
+strings = [
+    input("Enter a string: "),
+    input("Enter a string: "),
+    input("Enter a string: "),
+    input("Enter a string: "),
+    input("Enter a string: "),
+]
+
+num1 = int(input("Enter a number: "))
+num2 = int(input("Enter a number: "))
+num3 = int(input("Enter a number: "))
+
+final_string = strings[num1] + strings[num2] + strings[num3]
+print(final_string)
+
+__________________________________________________________________________________________________________
+
+I find it interesting that there are multiple solutions. Based on the solutions provided, I feel like I wasn't
+supposed to be using 'for' loops yet.
+
+[course-site]: https://www.programmingexpert.io/index
