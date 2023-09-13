@@ -9,3 +9,5 @@ Today I'm setting up the blog.
 Looks like Jekyll builds the website and
 GitHub holds the website files in a repository and gives the public access
 to the website.
+
+I like to listen to LoFi music as I study/work.
