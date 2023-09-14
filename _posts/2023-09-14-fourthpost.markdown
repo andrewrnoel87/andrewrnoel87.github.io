@@ -4,7 +4,7 @@ title:  "Fun with Strings"
 date:   2023-09-14 15:15:00 -0400
 categories: blog
 ---
-Today I covered Strings from the [programmingexpert.io][course-site] course. 
+Today I covered Strings and Tuples from the [programmingexpert.io][course-site] course. 
 
 Here is some code I wrote for an exercise. It uses various methods on strings and uses
 an f string.
@@ -53,5 +53,7 @@ sentence = input("Enter a sentence: ").split(" ")
 print(f"There are {len(sentence)} words in this sentence")
 
 """"""
+
+Remeber Tuples are immutable.
 
 [course-site]: https://www.programmingexpert.io/index
