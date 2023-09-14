@@ -10,6 +10,7 @@ Here is some code I wrote for an exercise. It uses various methods on strings an
 an f string.
 
 """"""
+
 num = input("Enter an integer: ")
 if num.isdigit():
     name = input("What is your name? ")
@@ -18,6 +19,7 @@ else:
     print(num.capitalize())
 
 """"""
+
 Another exercise. The prompt was designed to get us to use the 'in' operator.
 
 """"""
