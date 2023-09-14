@@ -41,5 +41,17 @@ else:
 
     print("The first word isn't contained in the second one")
 
+""""""
+
+The following code takes a sentence and splits it into a List of strings and then 
+returns the length of that List to tell us how many words were in the sentence.
+
+""""""
+
+sentence = input("Enter a sentence: ").split(" ")
+
+print(f"There are {len(sentence)} words in this sentence")
+
+""""""
 
 [course-site]: https://www.programmingexpert.io/index
