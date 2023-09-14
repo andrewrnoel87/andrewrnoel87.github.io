@@ -18,6 +18,17 @@ else:
     print(num.capitalize())
 
 """"""
+Another exercise. The prompt was designed to get us to use the 'in' operator.
+
+""""""
+word_one = input("Enter a word: ")
+
+word_two = input("Enter another word: ")
+
+if word_one in word_two:
+    print("The first word is contained in the second one")
+else:
+    print("The first word isn't contained in the second one")
 
 
 [course-site]: https://www.programmingexpert.io/index
