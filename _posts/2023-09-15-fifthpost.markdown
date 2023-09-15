@@ -119,7 +119,7 @@ if number_of_inputs > 0:
 
 Use a while loop to print the squares of the numbers: 1, 3, 6, 10, 15 and 21.
 
-""""""
+"""My Solution"""
 
 lst = [1, 3, 6, 10, 15, 21]
 
@@ -131,7 +131,19 @@ while index < len(lst):
     print(square)
     index += 1
 
-""""""
+"""An Interesting Solution"""
+
+num = 1
+
+step = 2
+
+while num <= 21:
+
+    print(num * num)
+
+    num += step
+    
+    step += 1
 
 
 """"""
