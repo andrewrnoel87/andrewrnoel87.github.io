@@ -54,6 +54,6 @@ print(f"There are {len(sentence)} words in this sentence")
 
 """"""
 
-Remeber Tuples are immutable.
+Remember Tuples are immutable.
 
 [course-site]: https://www.programmingexpert.io/index
