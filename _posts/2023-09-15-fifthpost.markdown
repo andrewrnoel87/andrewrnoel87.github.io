@@ -1,12 +1,12 @@
 ---
 layout: default
-title:  "The Mighty 'For' loop"
+title:  "The Mighty Loop"
 date:   2023-09-15 14:03:00 -0400
 categories: blog
 ---
-Today I covered 'For' Loops from the [programmingexpert.io][course-site] course. 
+Today I covered 'For' Loops  and 'While' Loops from the [programmingexpert.io][course-site] course. 
 
-"""Exercise 1"""
+"""For Loop Exercise 1"""
 
 Here is some code I wrote for an exercise. The goal of the exercise was to use a single for loop to iterate through the two strings, and print all of their matching characters(i.e., the characters that are the same index and that are equal to each other), each on a separate line.
 
@@ -22,7 +22,7 @@ for i, char in enumerate(string1):
 
         print(char)
 
-"""Exercise 2"""
+"""For Loop Exercise 2"""
 
 Use a single for loop to iterate through the provided list, and print the elements that are both divisible by 2 and located at an odd index, each on a separate line.
 
@@ -36,7 +36,7 @@ for i, elem in enumerate(lst):
 
         print(elem)
 
-"""Exercise 3"""
+"""For Loop Exercise 3"""
 
 Use nested for loops to iterate through the provided list, which contains other lists, and print the respective sums of the inner lists, each on a separate line.
 
@@ -54,7 +54,7 @@ for elem in lst:
 
     print(sum)
 
-"""Exercise 4"""
+"""For Loop Exercise 4"""
 
 Use a single for loop to iterate through the provided list of numbers, and for each number, print the sum of the number and the one directly to its right. Since the last number in the list has no number to the right of it, skip it.
 
@@ -65,6 +65,74 @@ lst = [-2, 0, 4, 5, 1, 2]
 for i in range(len(lst) - 1):
 
     print(lst[i] + lst[i + 1])
+
+"""While Loop Exercise 1"""
+
+a
+
+""""""
+
+input_count = 0
+
+while True:
+
+    num = int(input("Enter a number: "))
+
+    input_count += 1
+
+    if num == 5:
+
+        print(f"You entered {input_count} numbers.")
+
+        break
+
+"""While Loop Exercise 2"""
+
+a
+
+""""""
+
+number_of_inputs = 0
+
+total_char_count = 0
+
+
+while True:
+
+    user_input = input("Enter a word: ")
+
+    if user_input == "q" or user_input == "quit":
+
+        break
+
+    total_char_count += len(user_input)
+
+    number_of_inputs += 1
+    
+if number_of_inputs > 0:
+
+    average_word_len = total_char_count / number_of_inputs
+
+    print(f"The average word length is: {average_word_len}.")
+
+"""While Loop Exercise 3"""
+
+a
+
+""""""
+
+lst = [1, 3, 6, 10, 15, 21]
+
+index = 0
+
+while index < len(lst):
+
+    square = lst[index] * lst[index]
+    print(square)
+    index += 1
+
+""""""
+
 
 """"""
 
