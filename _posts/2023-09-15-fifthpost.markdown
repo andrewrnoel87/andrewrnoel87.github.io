@@ -68,7 +68,7 @@ for i in range(len(lst) - 1):
 
 """While Loop Exercise 1"""
 
-a
+Write a program that continually asks the user to enter a number until they enter the number 5, at which point the program should print how many numbers the user has entered. Assume the user will only ever enter a number.
 
 """"""
 
@@ -88,7 +88,7 @@ while True:
 
 """While Loop Exercise 2"""
 
-a
+Write a program that continually asks the user to enter a word until they enter the word "q" or "quit", at which point the program should print the average length of all of the entered words, excluding the "q" or "quit". If the user doesn't enter any words(i.e., immediately enters "q" or "quit"), the program should not print anything. 
 
 """"""
 
