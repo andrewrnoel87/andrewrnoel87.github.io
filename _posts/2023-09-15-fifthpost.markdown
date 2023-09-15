@@ -6,9 +6,9 @@ categories: blog
 ---
 Today I covered 'For' Loops from the [programmingexpert.io][course-site] course. 
 
-""""""
+"""Exercise 1"""
 
-Here is some code I wrote for an exercise.
+Here is some code I wrote for an exercise. The goal of the exercise was to use a single for loop to iterate through the two strings, and print all of their matching characters(i.e., the characters that are the same index and that are equal to each other), each on a separate line.
 
 """"""
 
@@ -22,7 +22,11 @@ for i, char in enumerate(string1):
 
         print(char)
 
-"""""""
+"""Exercise 2"""
+
+Use a single for loop to iterate through the provided list, and print the elements that are both divisible by 2 and located at an odd index, each on a separate line.
+
+""""""
 
 lst = [45, 24, 22, 1, 45, 2, 12, 13, 16, 10, 0, -7]
 
@@ -31,6 +35,10 @@ for i, elem in enumerate(lst):
     if (elem % 2 == 0) and (i % 2 != 0):
 
         print(elem)
+
+"""Exercise 3"""
+
+Use nested for loops to iterate through the provided list, which contains other lists, and print the respective sums of the inner lists, each on a separate line.
 
 """"""
 
@@ -45,6 +53,10 @@ for elem in lst:
         sum += inner_elem
 
     print(sum)
+
+"""Exercise 4"""
+
+Use a single for loop to iterate through the provided list of numbers, and for each number, print the sum of the number and the one directly to its right. Since the last number in the list has no number to the right of it, skip it.
 
 """"""
 
