@@ -90,7 +90,7 @@ while True:
 
 Write a program that continually asks the user to enter a word until they enter the word "q" or "quit", at which point the program should print the average length of all of the entered words, excluding the "q" or "quit". If the user doesn't enter any words(i.e., immediately enters "q" or "quit"), the program should not print anything. 
 
-This one was a bit of a challenge at first. I was over complicating the conditionals. When break the loop and when you update the variables need to be handled carefully.
+This one was a bit of a challenge at first. I was over complicating the conditionals. Also, when to break the loop and when to update the variables needs to be handled carefully.
 
 """"""
 
