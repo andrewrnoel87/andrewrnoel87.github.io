@@ -117,7 +117,7 @@ if number_of_inputs > 0:
 
 """While Loop Exercise 3"""
 
-a
+Use a while loop to print the squares of the numbers: 1, 3, 6, 10, 15 and 21.
 
 """"""
 
