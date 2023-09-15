@@ -67,4 +67,5 @@ for i in range(len(lst) - 1):
     print(lst[i] + lst[i + 1])
 
 """"""
+
 [course-site]: https://www.programmingexpert.io/index
