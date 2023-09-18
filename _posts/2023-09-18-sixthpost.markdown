@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Time for a Slice"
+title:  "Time for a Slice and a Dictionary"
 date:   2023-09-18 13:03:00 -0400
 categories: blog
 ---

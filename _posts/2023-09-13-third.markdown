@@ -12,7 +12,7 @@ Today I covered Type Conversions, Conditions, Compound Conditions, Conditionals,
 
 """"""
 
-Common methods used with Lists are .append(), .pop(), .count(), .index(), .remove(), and .extend(). The 'in' operator and the len() function are commonly used as well. Negative indexing and List Concatenation are also possible.
+A List is a collection data type. Common methods used with Lists are .append(), .pop(), .count(), .index(), .remove(), and .extend(). The 'in' operator and the len() function are commonly used as well. Negative indexing and List Concatenation are also possible.
 
 """"""
 

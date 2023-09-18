@@ -8,7 +8,7 @@ Today I covered Strings and Tuples from the [programmingexpert.io][course-site] 
 
 """"""
 
-Common methods used with Strings are .count(), .find(), .upper(), .lower(), .capitalize(), .isdigit(), .split(), .replace(), and .join(). The 'in' operator and the len() function are commonly used as well. String Multiplication and Escape Characters are also possible.
+A String is a collection data type. Common methods used with Strings are .count(), .find(), .upper(), .lower(), .capitalize(), .isdigit(), .split(), .replace(), and .join(). The 'in' operator and the len() function are commonly used as well. Negative Indexing, String Multiplication, String Concatenation, and Escape Characters are also possible.
 
 """"""
 
