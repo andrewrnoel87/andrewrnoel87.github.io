@@ -37,10 +37,23 @@ last_slice = third_slice[::w]  # pick every other element in the list
 print(last_slice)
 
 
+"""The Dictionary Exercise"""
+
+Write a program that asks the user to enter a string and prints the string's characters and their frequencies in any order and in the following format: key: frequency.
+
 """"""
 
+counts = {}
 
+user_input = input("Enter a string: ")
 
-""""""
+for char in user_input:
+
+    counts[char] = counts.get(char, 0) + 1
+
+for key in counts:
+
+    print(f"{key}: {counts[key]}")
+
 
 [course-site]: https://www.programmingexpert.io/index
