@@ -12,8 +12,7 @@ Common methods used with Strings are .count(), .find(), .upper(), .lower(), .cap
 
 """
 
-Here is some code I wrote for an exercise. It uses various methods on strings and uses
-an f string.
+Here is some code I wrote for an exercise. It uses various methods on strings. The f string is used as well.
 
 """"""
 
