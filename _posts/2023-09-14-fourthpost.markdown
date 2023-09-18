@@ -6,6 +6,12 @@ categories: blog
 ---
 Today I covered Strings and Tuples from the [programmingexpert.io][course-site] course. 
 
+"""
+
+Common methods used with Strings are .count(), .find(), .upper(), .lower(), .capitalize(), .isdigit(), .split(), .replace(), and .join(). The 'in' operator and the len() function are commonly used as well. String Multiplication and Escape Characters are also possible.
+
+"""
+
 Here is some code I wrote for an exercise. It uses various methods on strings and uses
 an f string.
 

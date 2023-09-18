@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "First test Post"
+title:  "First Test Post"
 date:   2023-09-11 11:44:35 -0400
 categories: test
 ---
