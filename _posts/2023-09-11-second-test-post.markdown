@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Second Post"
+title:  "Setup"
 date:   2023-09-11 16:35:00 -0400
 categories: blog
 ---
@@ -11,3 +11,5 @@ GitHub holds the website files in a repository and gives the public access
 to the website.
 
 I like to listen to LoFi music as I study/work.
+
+GFuel also seems to be important to the process.

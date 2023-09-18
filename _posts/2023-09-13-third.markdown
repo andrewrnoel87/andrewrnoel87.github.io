@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Refreshing the Fundamentals"
+title:  "Refreshing the Fundamentals / Lists"
 date:   2023-09-13 14:30:00 -0400
 categories: blog
 ---
@@ -22,9 +22,7 @@ The objective was to write a program that asks the user to input five strings an
 Then, the program should ask the user to input three numbers in the range 0 to 4, inclusive (these numbers represent the list indices).
 Finally, the program should use these numbers to access the three strings at the corresponding indices in the previously created list, concatenate them, and print out the resulting string.
 
-Here is my solution.
-
-""""""
+"""My Solution"""
 
 lst = []
 
