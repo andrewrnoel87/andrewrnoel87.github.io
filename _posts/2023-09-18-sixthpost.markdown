@@ -6,6 +6,11 @@ categories: blog
 ---
 Today I covered Slices from the [programmingexpert.io][course-site] course. 
 
+""""""
+
+Slices provide a new subset of a collection(i.e., list, string, tuple, etc.). Slices use the following format... 
+collection[start:stop:step]. Negative indexing can be used and the stop point is not included. [:] will make a copy of the collection. [::-1] is a shortcut for reversing the collection.
+
 """The Slice Exercise"""
 
 Modify the w, x, y, and z variables such that the program outputs [8, 6, 4].
