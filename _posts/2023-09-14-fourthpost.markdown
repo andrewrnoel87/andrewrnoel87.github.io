@@ -1,16 +1,20 @@
 ---
 layout: default
-title:  "Fun with Strings"
+title:  "Fun with Strings and Tuples"
 date:   2023-09-14 15:15:00 -0400
 categories: blog
 ---
 Today I covered Strings and Tuples from the [programmingexpert.io][course-site] course. 
 
-"""
+""""""
 
 Common methods used with Strings are .count(), .find(), .upper(), .lower(), .capitalize(), .isdigit(), .split(), .replace(), and .join(). The 'in' operator and the len() function are commonly used as well. String Multiplication and Escape Characters are also possible.
 
-"""
+""""""
+
+A Tuple is a collection data type. Tuples are immutable. Common methods used with Tuples are .count() and .index(). The 'in' operator and the len() function are commonly used as well. Negative Indexing, Multipling Tuples, and Adding Tuples are also possible.
+
+""""""
 
 Here is some code I wrote for an exercise. It uses various methods on strings. The f string is used as well.
 
