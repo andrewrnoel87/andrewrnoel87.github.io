@@ -8,7 +8,7 @@ Today I covered Sets from the [programmingexpert.io][course-site] course.
 
 """"""
 
-Sets.
+A Set is a collection that holds unique individual elements (not key-value pairs) in an unordered fashion. Common methods used with Sets are .add(), .remove(), .clear(), .union(), .intersection(), .difference(), .symmetric_difference(), .update(), .difference_update(), .symmetric_difference_update(), .issubset(), and .issuperset(). The 'in' operator and the len() function are commonly used as well.
 
 """The Set Exercise"""
 
@@ -26,7 +26,7 @@ while True:
 
         break
 
-    character_set.update(input_character)
+    character_set.add(input_character)
 
 num_characters = len(character_set)
 
