@@ -8,7 +8,7 @@ Today I covered Sets from the [programmingexpert.io][course-site] course.
 
 """"""
 
-A Set is a collection that holds unique individual elements (not key-value pairs) in an unordered fashion. Common methods used with Sets are .add(), .remove(), .clear(), .union(), .intersection(), .difference(), .symmetric_difference(), .update(), .difference_update(), .symmetric_difference_update(), .issubset(), and .issuperset(). The 'in' operator and the len() function are commonly used as well.
+A Set is a collection that holds unique individual elements (not key-value pairs) in an unordered fashion. The set() function is used to create an empty set. Common methods used with Sets are .add(), .remove(), .clear(), .union(), .intersection(), .difference(), .symmetric_difference(), .update(), .difference_update(), .symmetric_difference_update(), .issubset(), and .issuperset(). The 'in' operator and the len() function are commonly used as well.
 
 """The Set Exercise"""
 
