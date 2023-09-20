@@ -14,7 +14,7 @@ It is best to use a Set only if you care whether an element exists or does not e
 
 """Shortcuts"""
 
-z = x.union(y)  or  z = x escape(|) y
+z = x.union(y)  or  z = x "|" y
 
 z = x.intersection(y)   or  z = x & y
 
