@@ -57,9 +57,9 @@ finally:
 
 """"""
 
-
-
 """Alternate Solution Provided"""
+
+""""""
 
 numerator = input("Enter the numerator: ")
 
