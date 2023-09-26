@@ -100,7 +100,7 @@ def compare_lists(lst1=[], lst2=[]):
 
 """Function Exercise Five"""
 
-Question5
+Write the function trim_list(lst, elements_to_trim), which takes in a list and returns a new version of the input list where the last elements_to_trim elements have been removed. You can assume that elements_to_trim will always be a positive integer that's smaller than the length of lst.
 
 """My Solution for Five"""
 
@@ -120,7 +120,7 @@ def trim_list(lst, elements_to_trim):
 
 """Function Exercise Six"""
 
-Question6
+Write the function running_sums(numbers), which takes in a list of integers and returns a new list of the same length as numbers, where the element at index i in the new list is equal to numbers[0] + numbers[1] + ... + numbers[i-1] + numbers[i]. You can assume that numbers will only contain integers.
 
 """My Solution for Six"""
 
