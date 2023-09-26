@@ -100,7 +100,7 @@ def compare_lists(lst1=[], lst2=[]):
 
 """Function Exercise Five"""
 
-Question
+Question5
 
 """My Solution for Five"""
 
@@ -118,5 +118,26 @@ def trim_list(lst, elements_to_trim):
 
 """"""
 
+"""Function Exercise Six"""
+
+Question6
+
+"""My Solution for Six"""
+
+def running_sums(numbers):
+
+    new_list = []
+
+    current_sum = 0
+
+    for num in numbers:
+
+        current_sum += num
+
+        new_list.append(current_sum)
+
+    return new_list
+
+""""""
 
 [course-site]: https://www.programmingexpert.io/index
