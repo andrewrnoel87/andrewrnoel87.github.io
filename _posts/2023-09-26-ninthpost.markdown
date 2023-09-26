@@ -64,4 +64,59 @@ def string_lengths(strings):
 
 """Function Exercise Four"""
 
+Write a function named compare_lists that accepts two optional parameters, lst1 and lst2. The function should return the number of unique common elements between the two lists. If either of the lists is not passed as a parameter, it should be treated as an empty list. You can assume that the input lists will only contain integers.
+
+"""My Solution for Four"""
+
+def compare_lists(lst1=[], lst2=[]):
+
+    common = set()
+
+    for elem in lst1:
+
+        if elem in lst2:
+
+            common.add(elem)
+
+    return len(common)
+
+""""""
+
+Based on the sample solution below, I did the intersection of two sets the hard way.
+
+"""Sample Solution for Four"""
+
+def compare_lists(lst1=[], lst2=[]):
+
+    lst1_set = set(lst1)
+
+    lst2_set = set(lst2)
+
+    set_intersection = lst1_set.intersection(lst2_set)
+
+    return len(set_intersection)
+
+""""""
+
+"""Function Exercise Five"""
+
+Question
+
+"""My Solution for Five"""
+
+def trim_list(lst, elements_to_trim):
+
+    new_lst = []
+
+    new_range = len(lst) - elements_to_trim
+
+    for i in range(new_range):
+
+        new_lst.append(lst[i])
+
+    return new_lst
+
+""""""
+
+
 [course-site]: https://www.programmingexpert.io/index
