@@ -50,7 +50,4 @@ def replace(lst, target, swap_value):
 
 """"""
 
-
-""""""
-
 [course-site]: https://www.programmingexpert.io/index
