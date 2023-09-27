@@ -12,6 +12,26 @@ Objects/data types in Python are mutable or immutable.
 
 """"""
 
+In Python, an immutable object is one that cannot be modified once created. The following are examples of immutable data types:
+
+int
+
+float
+
+str
+
+bool
+
+tuple
+
+In Python, a mutable object is one that can modified once created. The following are examples of mutable data types:
+
+list
+
+set
+
+dict
+
 """Mutability Exercise One"""
 
 Write a function named replace that takes in three parameters: lst (a list of strings), target (a string), and swap_value (another string). The function should replace all instances of target in lst with swap_value, and it shouldn't return anything; in other words, your function should mutate the input list.
