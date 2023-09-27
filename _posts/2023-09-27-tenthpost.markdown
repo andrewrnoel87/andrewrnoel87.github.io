@@ -8,7 +8,7 @@ Today I covered Mutability in Python from the [programmingexpert.io][course-site
 
 """"""
 
-Objects/data types in Python are mutable or immutable.
+Objects/data types in Python are mutable or immutable. The "is" keyword will return True if variable references are pointing to the same object in the memory. Which is different than checking for equivalency. The id() function actually returns the memory address location of the object. We can modify mutable objects in place. Usually with the help of a funtion. We can copy a mutable object so as to not change the original. We usually make shallow copies of mutable objects, but deep copies are possible. Mutable objects can store immutable objects and immutable objects can store mutable objects.
 
 """"""
 
