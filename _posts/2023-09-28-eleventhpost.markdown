@@ -1,0 +1,43 @@
+---
+layout: default
+title:  "AWS"
+date:   2023-09-28 15:58:00 -0400
+categories: blog
+---
+Today I took a break from the [programmingexpert.io][course-site] course. I researched AWS instead.
+
+""""""
+
+AWS or Amazon Web Services is a popular global cloud platform. It provides infrastructure as a service(IAAS), platform as a service(PAAS), software as a service(SAAS), and cloud storage. Convenient billing options, easy sign up process, stability, and security from a trusted vendor have made AWS popular. 
+
+If your business needs a virtual machine, use IAAS. IT Administrators tend to be the main users of IAAS. If your company requires a platform for building software products, use PAAS. Software Developers tend to be the main users of PAAS. If your business does not want to maintain any IT equipment, then use SAAS. Software as a service tends to be for the end customers.
+
+""""""
+
+"""Life Cycle of a Cloud Computing Solution"""
+
+Define the Purpose
+
+Define the Hardware
+
+Define the Storage
+
+Define the Network
+
+Define the Security
+
+Define the Management Processes and Tools
+
+Testing the Process
+
+Analytics
+
+""""""
+
+I have been using tutorials from [Simplilearn][educational-video] to research AWS.
+
+""""""
+
+[educational-video]: https://www.youtube.com/watch?v=RLd_XTyt-w8
+
+[course-site]: https://www.programmingexpert.io/index
