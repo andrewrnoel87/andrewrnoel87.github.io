@@ -4,7 +4,7 @@ title:  "AWS"
 date:   2023-09-28 15:58:00 -0400
 categories: blog
 ---
-Today I took a break from the [programmingexpert.io][course-site] course. I researched AWS instead.
+Today, I took a break from the [programmingexpert.io][course-site] course. I researched AWS instead.
 
 """"""
 
