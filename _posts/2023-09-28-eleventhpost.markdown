@@ -36,8 +36,12 @@ Analytics
 
 I have been using tutorials from [Simplilearn][educational-video] to research AWS.
 
+The plan is to learn Terraform from [freeCodeCamp.org][educational-video2] next.
+
 """"""
 
 [educational-video]: https://www.youtube.com/watch?v=RLd_XTyt-w8
+
+[educational-video2]: https://www.youtube.com/watch?v=iRaai1IBlB0
 
 [course-site]: https://www.programmingexpert.io/index
