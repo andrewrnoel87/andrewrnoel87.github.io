@@ -15,7 +15,7 @@ My plan for now is to work through the [programmingexpert.io][course-site] cours
 
 """"""
 
-"""Programming Fundamentals"""
+"""Phase 1 - Programming Fundamentals"""
 
 """"""
 
@@ -73,7 +73,7 @@ Lessons
 
 """"""
 
-"""Object-Oriented Programming"""
+"""Phase 2 - Object-Oriented Programming"""
 
 """"""
 
@@ -101,7 +101,7 @@ Lessons
 
 """"""
 
-"""Advanced Programming"""
+"""Phase 3 - Advanced Programming"""
 
 """"""
 
@@ -137,7 +137,7 @@ Lessons
 
 """"""
 
-"""Software Design"""
+"""Phase 4 - Software Design"""
 
 """"""
 
@@ -169,7 +169,7 @@ Lessons
 
 """"""
 
-"""Software Engineering Tools"""
+"""Phase 5 - Software Engineering Tools"""
 
 """"""
 
@@ -215,7 +215,7 @@ Lessons
 
 """"""
 
-"""Programming With Go"""
+"""Phase 6 - Programming With Go"""
 
 """"""
 
@@ -255,7 +255,7 @@ Lessons
 
 """"""
 
-"""Projects"""
+"""Phase 7 - Projects"""
 
 """"""
 
