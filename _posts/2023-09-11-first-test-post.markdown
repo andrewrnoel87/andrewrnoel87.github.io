@@ -101,7 +101,179 @@ Lessons
 
 """"""
 
+"""Advanced Programming"""
+
 """"""
+
+Lessons
+
+1 - Modules and Packages
+
+2 - Files
+
+3 - *args And **kwargs
+
+4 - Lambda Functions
+
+5 - Map and Filter
+
+6 - Function Closures
+
+7 - Decorators
+
+8 - Iterators
+
+9 - Generators
+
+10 - Compilers and Interpreters
+
+11 - Threads And Processes
+
+12 - Python Global Interpreter Lock
+
+13 - Threads
+
+14 - Asynchronous Programming
+
+""""""
+
+"""Software Design"""
+
+""""""
+
+Lessons
+
+"""Design Principles
+
+1 - Divide And Conquer
+
+2 - Cohesion
+
+3 - Coupling
+
+4 - Abstraction
+
+5 - Reusability
+
+6 - Reuse
+
+7 - Flexibility
+
+8 - Obsolescence
+
+9 - Portability
+
+10 - Testability
+
+11 - Defensibility
+
+""""""
+
+"""Software Engineering Tools"""
+
+""""""
+
+Lessons
+
+"""Bash
+
+1 - Introduction To Bash
+
+2 - Users And Sudo
+
+3 - Files And Directories
+
+4 - Running Executables
+
+5 - Environment Variables
+
+6 - Searching And Filtering
+
+"""Integrated Development Environments (IDEs)
+
+7 - What Are IDEs?
+
+8 - Introduction to VSCode
+
+9 - VSCode Editor
+
+10 - Debuggers
+
+11 - VSCode Customization
+
+12 - Other Editors and IDEs
+
+"""Git & GitHub Fundamentals
+
+13 - Introduction To Version Control
+
+14 - Git Fundamentals
+
+15 - Merging And Rebasing
+
+16 - GitHub And Remote Repositories
+
+""""""
+
+"""Programming With Go"""
+
+""""""
+
+Lessons
+
+1 - Introduction To Go
+
+2 - Data Types And Variables
+
+3 - Implicit Assignment
+
+4 - Console Output
+
+5 - Arithmetic Operators
+
+6 - Conditions And Conditionals
+
+7 - Switch Statement
+
+8 - Looping (For & While)
+
+9 - Arrays and Slices
+
+10 - Maps
+
+11 - Structs
+
+12 - Interfaces
+
+13 - Error Handling
+
+14 - Functions
+
+15 - Pointers and Reference
+
+16 - Go Routines and Concurrency
+
+""""""
+
+"""Projects"""
+
+""""""
+
+The final milestone: this is where you get to apply your newfound programming skills to build complex applications that go beyond simple coding challenges. It's time to put your Software Engineer hat on!
+
+1. Tournament Game Generator
+
+2. Blackjack Card Game
+
+3. Asynchronous Point Of Sale System
+
+4. Student Performance
+
+5. Contact List
+
+""""""
+
+
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
