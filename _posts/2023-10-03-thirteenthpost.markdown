@@ -122,7 +122,7 @@ print(x, y, z)  # output will be 2 2 2
 
 x, y = 1, 2
 
-print(x, y)  # out will be 1 2
+print(x, y)  # output will be 1 2
 
 """"""
 
@@ -137,11 +137,27 @@ print(x, y, z)  # output will be 1 2 3
 
 """"""
 
-docstrings
+docstrings are multiline strings/comments that describe what a function does. They are typically found at the top of a function's code.
+
+- docstring example -
+
+def foo():
+
+    """
+
+    This is the foo function.
+
+    """
+
+    pass  # pass is a placeholder for future code.
 
 """"""
 
-help(object) function
+help(object) function brings up the docstring.
+
+- help(object) example -
+
+help(foo)  # output will be: foo() This is the foo function.
 
 """"""
 
