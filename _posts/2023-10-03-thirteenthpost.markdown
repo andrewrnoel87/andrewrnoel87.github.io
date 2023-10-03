@@ -88,4 +88,18 @@ In the provided code, we use people.get as the key function. This means that the
 
 """"""
 
+"""Misc. Python Syntax"""
+
+Comprehensions
+
+Multiple Assignment
+
+Unpacking
+
+docstrings
+
+help(object) function
+
+""""""
+
 [course-site]: https://www.programmingexpert.io/index
