@@ -46,6 +46,19 @@ sorted(iterable, /, *, key=None, reverse=False) - Returns a new list containing 
 
 .sort() sorts and modifies the object in place.
 
-""""""
+When sorted(tup) is called on a tuple it is returned as a new sorted list. tup.sort() will not work on a tuple because a tuple is immutable.
 
+"""Example of Sorting by Key"""
+
+def sort_second_index(item):
+
+    return item[1]
+
+lst = [[1,-2], [3,-4], [5,-6], [-1,-2], [0,0]]
+
+lst.sort(reverse=True, key=sort_second_index)
+
+print(lst)
+
+""""""
 [course-site]: https://www.programmingexpert.io/index
