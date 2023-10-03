@@ -48,7 +48,7 @@ round(number, ndigits=None) - Rounds a number to a given precision in decimal di
 
 sorted(iterable, /, *, key=None, reverse=False) - Returns a new list containing all items from the iterable in ascending order. A custom key function can be supplied to customize the sort order, and the reverse flag can be set to request the result in descending order.
 
-.sort() sorts and modifies the object in place. In Python, the .sort() method sorts a list in place (it mutates the list), and it takes two optional parameters: reverse (a boolean) and key (a function). When reverse is True, the method sorts the relevant list in descending order.
+.sort() - sorts and modifies the object in place. In Python, the .sort() method sorts a list in place (it mutates the list), and it takes two optional parameters: reverse (a boolean) and key (a function). When reverse is True, the method sorts the relevant list in descending order.
 
 When sorted(tup) is called on a tuple it is returned as a new sorted list. tup.sort() will not work on a tuple because a tuple is immutable.
 
