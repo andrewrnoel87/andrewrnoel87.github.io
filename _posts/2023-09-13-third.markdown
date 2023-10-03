@@ -50,6 +50,8 @@ I want to rewrite this in java at some point. Going to stay focused on the lesso
 
 Here are example solutions the course provide.
 
+""""""
+
 - Solution 1 -
 
 string1 = input("Enter a string: ")
@@ -73,6 +75,8 @@ num3 = int(input("Enter a number: "))
 final_string = strings[num1] + strings[num2] + strings[num3]
 
 print(final_string)
+
+""""""
 
 - Solution 2 -
 
@@ -109,6 +113,8 @@ final_string = strings[num1] + strings[num2] + strings[num3]
 
 print(final_string)
 
+""""""
+
 - Solution 3 -
 
 strings = [
@@ -139,5 +145,7 @@ print(final_string)
 
 I find it interesting that there are multiple solutions. Based on the solutions provided, I feel like I wasn't
 supposed to be using 'for' loops yet.
+
+""""""
 
 [course-site]: https://www.programmingexpert.io/index
