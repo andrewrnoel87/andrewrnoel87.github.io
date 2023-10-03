@@ -1,16 +1,18 @@
 ---
 layout: default
-title:  "Math"
+title:  "Math, Random, and Sorting"
 date:   2023-10-03 10:23:00 -0400
 categories: blog
 ---
-Today I covered Math in Python from the [programmingexpert.io][course-site] course.
+Today I covered Math and Sorting in Python from the [programmingexpert.io][course-site] course.
 
 """"""
 
 The standard library of a language are the libraries that the language comes with by default. In Python, this includes modules like os, math, threading and many more.
 
 """"""
+
+"""Math"""
 
 import math
 
@@ -38,6 +40,10 @@ round(number, ndigits=None) - Rounds a number to a given precision in decimal di
 
 """"""
 
+"""Sorting"""
 
+sorted(iterable, /, *, key=None, reverse=False) - Returns a new list containing all items from the iterable in ascending order. A custom key function can be supplied to customize the sort order, and the reverse flag can be set to request the result in descending order.
+
+""""""
 
 [course-site]: https://www.programmingexpert.io/index
