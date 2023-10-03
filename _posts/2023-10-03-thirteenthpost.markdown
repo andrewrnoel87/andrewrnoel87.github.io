@@ -90,13 +90,52 @@ In the provided code, we use people.get as the key function. This means that the
 
 """Misc. Python Syntax"""
 
-Comprehensions
+""""""
 
-Multiple Assignment
+Comprehensions are a way to initialize a data type/structure in one line of code.
 
-Unpacking
+- Comprehension Examples -
+
+lst = [i * j for i in range(1,11) for j in range(5)]  # works with lists
+
+s = {i * j for i in range(1,11) for j in range(5)}  # works with sets
+
+dict = {i:j for i in range(1,11) for j in range(5)}  # works with dictionaries
+
+*Tuple comprehensions produce generator objects. A work around to producing tuples is to do a list comprehension and convert it to a tuple.
+
+lst = tuple([i * j for i in range(1,11) for j in range(5)])
+
+""""""
+
+Multiple Assignment is assigning one value to multiple variables or multiple variables to multiple values.
+
+- Multiple Assignment Examples -
+
+x = y = z = 2
+
+print(x, y, z)  # output will be 2 2 2
+
+x, y = 1, 2
+
+print(x, y)  # out will be 1 2
+
+""""""
+
+Unpacking is taking an iterable object and unpacking it into individual values. To unpack, define a number of variables equal
+to the number of items corresponding to their postion.
+
+- Unpacking Example -
+
+x, y, z = [1, 2, 3]
+
+print(x, y, z)  # output will be 1 2 3
+
+""""""
 
 docstrings
+
+""""""
 
 help(object) function
 
