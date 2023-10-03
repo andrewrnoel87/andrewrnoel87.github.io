@@ -1,0 +1,43 @@
+---
+layout: default
+title:  "Math"
+date:   2023-10-03 10:23:00 -0400
+categories: blog
+---
+Today I covered Math in Python from the [programmingexpert.io][course-site] course.
+
+""""""
+
+The standard library of a language are the libraries that the language comes with by default. In Python, this includes modules like os, math, threading and many more.
+
+""""""
+
+import math
+
+The math module is part of the Python standard library, and it has many nice functions that we may need. For instance, math.sin(x), math.cos(x), math.tan(x) and math.pi are available for the math module.
+
+""""""
+
+import random
+
+The random module is part of the Python standard library, and provides many functions that can used to generate random numbers or make random choices. random.randint(start,stop), random.randrange(start, stop, step) and random.choice(iterable) are a few commonly used functions from the random module.
+
+""""""
+
+The following are math functions in Python that do not need to be imported.
+
+abs(x) - returns the absolute value of the argument.
+
+max(x) - returns its biggest item in an iterable object.
+
+min(x) - returns its smallest item in an iterable object.
+
+sum(x) - returns the sum of a 'start' value (default: 0) plus an iterable of numbers. When the iterable is empty, return the start value. This function is intended specifically for use with numeric values and may reject non-numeric types.
+
+round(number, ndigits=None) - Rounds a number to a given precision in decimal digits. The return value is an integer if ndigits is omitted or None.  Otherwise, the return value has the same type as the number.  ndigits may be negative. 
+
+""""""
+
+
+
+[course-site]: https://www.programmingexpert.io/index
