@@ -46,7 +46,7 @@ Common methods used with dictionaries are .values(), .keys(), .items() and .get(
 
 Write a program that asks the user to enter a string and prints the string's characters and their frequencies in any order and in the following format: key: frequency.
 
-"""My Solution"""
+- My Solution -
 
 counts = {}  # Initialize the dictionary
 
@@ -60,7 +60,9 @@ for key in counts:
 
     print(f"{key}: {counts[key]}")
 
-"""Alternate Solution Provided"""
+""""""
+
+- Alternate Solution Provided -
 
 This solution does not use the .get() method.
 

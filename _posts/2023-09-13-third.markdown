@@ -22,7 +22,7 @@ The objective was to write a program that asks the user to input five strings an
 Then, the program should ask the user to input three numbers in the range 0 to 4, inclusive (these numbers represent the list indices).
 Finally, the program should use these numbers to access the three strings at the corresponding indices in the previously created list, concatenate them, and print out the resulting string.
 
-"""My Solution"""
+- My Solution -
 
 lst = []
 
@@ -50,7 +50,7 @@ I want to rewrite this in java at some point. Going to stay focused on the lesso
 
 Here are example solutions the course provide.
 
-""" Solution 1 """
+- Solution 1 -
 
 string1 = input("Enter a string: ")
 
@@ -74,7 +74,7 @@ final_string = strings[num1] + strings[num2] + strings[num3]
 
 print(final_string)
 
-""" Solution 2 """
+- Solution 2 -
 
 string1 = input("Enter a string: ")
 
@@ -109,7 +109,7 @@ final_string = strings[num1] + strings[num2] + strings[num3]
 
 print(final_string)
 
-""" Solution 3"""
+- Solution 3 -
 
 strings = [
 
