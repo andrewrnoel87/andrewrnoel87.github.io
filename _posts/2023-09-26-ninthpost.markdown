@@ -16,7 +16,7 @@ Functions are a reusable block of code. Function names in Python cannot start wi
 
 Write a function named add that takes in two parameters x and y, both expected to be numbers. The function should add the two numbers and return the result.
 
-"""My Solution for One"""
+- My Solution for One -
 
 def add(num1, num2):
 
@@ -28,7 +28,7 @@ def add(num1, num2):
 
 Write the function find_all_odds(lst), which takes in a list of integers and returns a new list containing all of the odd numbers of the original list, in the order in which they appear. You can assume that lst will only contain integers.
 
-"""My Solution for Two"""
+- My Solution for Two -
 
 def find_all_odds(lst):
 
@@ -48,7 +48,7 @@ def find_all_odds(lst):
 
 Write the function string_lengths(strings), which takes in a list of strings and returns a new list containing the lengths of the strings, in their relevant order. You can assume that strings will only contain strings.
 
-"""My Solution for Three"""
+- My Solution for Three -
 
 def string_lengths(strings):
 
@@ -66,7 +66,7 @@ def string_lengths(strings):
 
 Write a function named compare_lists that accepts two optional parameters, lst1 and lst2. The function should return the number of unique common elements between the two lists. If either of the lists is not passed as a parameter, it should be treated as an empty list. You can assume that the input lists will only contain integers.
 
-"""My Solution for Four"""
+- My Solution for Four -
 
 def compare_lists(lst1=[], lst2=[]):
 
@@ -84,7 +84,7 @@ def compare_lists(lst1=[], lst2=[]):
 
 Based on the sample solution below, I did the intersection of two sets the hard way.
 
-"""Sample Solution for Four"""
+ - Sample Solution for Four -
 
 def compare_lists(lst1=[], lst2=[]):
 
@@ -102,7 +102,7 @@ def compare_lists(lst1=[], lst2=[]):
 
 Write the function trim_list(lst, elements_to_trim), which takes in a list and returns a new version of the input list where the last elements_to_trim elements have been removed. You can assume that elements_to_trim will always be a positive integer that's smaller than the length of lst.
 
-"""My Solution for Five"""
+ - My Solution for Five -
 
 def trim_list(lst, elements_to_trim):
 
@@ -122,7 +122,7 @@ def trim_list(lst, elements_to_trim):
 
 Write the function running_sums(numbers), which takes in a list of integers and returns a new list of the same length as numbers, where the element at index i in the new list is equal to numbers[0] + numbers[1] + ... + numbers[i-1] + numbers[i]. You can assume that numbers will only contain integers.
 
-"""My Solution for Six"""
+- My Solution for Six -
 
 def running_sums(numbers):
 
