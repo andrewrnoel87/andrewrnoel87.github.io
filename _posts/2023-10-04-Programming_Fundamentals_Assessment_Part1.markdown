@@ -154,6 +154,4 @@ print(f'You guessed the number in {attempts} attempt{suffix}')
 
 
 
-""""""
-
 [course-site]: https://www.programmingexpert.io/index
