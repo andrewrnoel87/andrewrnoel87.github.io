@@ -21,7 +21,7 @@ negative values).
 
 """"""
 
-- My Solution -
+- My Solution for One -
 
 """"""
 
@@ -97,6 +97,7 @@ else:
 
     print(f"You guessed the number in {guess_count} attempts")
 
+""""""
 
 """"""
 
@@ -152,6 +153,92 @@ print(f'You guessed the number in {attempts} attempt{suffix}')
 
 """"""
 
+I like the way the instructor handled the plural with a suffix.
 
+""""""
+
+"""Exercise Two"""
+
+""""""
+
+Caesar Cipher
+
+Write a function that accepts a string and returns the caesar cipher encoding of that stringaccording to a secondary input parameter named offset.
+
+The caesar cipher encoding of a string involves shifting each character in the string a set number of positions previous in the alphabet. For example, if you were performing a caesar cipher of the string "tim" with offset=2 you would get "rgk". "t" is shifted two positions to "r", "i" is shifted two positions to "g" and "m" is shifted two positions to "k".
+
+In the situation where the shift of a character results in it being a position before "a" the positions wrap and the next character should be "z". For example, the caesar cipher of "ab" with offset=2 would be "yz".
+
+offset will always be a positive integer that is no greater than 26 and the input string will only contain lowercase letters.
+
+""""""
+
+- My Solution for Two -
+
+""""""
+
+def caesar_cipher(string, offset):
+
+    string_list = [i for i in string]
+
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+
+    shifted_alphabet = [i for i in alphabet]
+
+    for i in range(len(shifted_alphabet)):
+
+        shifted_alphabet[i] = alphabet[i - offset]
+
+    for i in range(len(string_list)):
+
+        char = string_list[i]
+
+        target_char = shifted_alphabet[alphabet.index(char)]
+
+        string_list[i] = target_char
+
+    coded_string = ""
+
+    for elem in string_list:
+
+        coded_string += elem
+    
+    return coded_string
+
+""""""
+
+""""""
+
+- Provided Sample Solution for Two -
+
+""""""
+
+def caesar_cipher(string, offset):
+
+    alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
+
+                'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+    encoded_string = ''
+
+    for character in string:
+
+        position = alphabet.index(character)
+
+        offset_position = position - offset
+
+        # No need to handle negative positions because of negative indexing
+
+        encoded_character = alphabet[offset_position]
+
+        encoded_string += encoded_character
+
+    return encoded_string
+
+""""""
+
+After going over the provided solution, I see my solution could have been more elegant. It looks like the exercise could have been solved without making a whole shitfted alphabet list. 
+
+""""""
 
 [course-site]: https://www.programmingexpert.io/index
