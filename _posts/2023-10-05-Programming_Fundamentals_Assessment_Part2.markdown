@@ -296,10 +296,18 @@ Sample Output:
 """"""
 
 def pairs_sum_to_target(list1, list2, target):
+    
+    pairs_list = []
 
-    # Write your code here.
+    for i in range(len(list1)):
 
-    pass
+        for j in range(len(list2)):  # go through each index combination
+
+            if (list1[i] + list2[j]) == target:  
+
+                pairs_list.append([i, j])   # add index pair whose summation equals target to new list
+    
+    return pairs_list
 
 """"""
 
@@ -309,11 +317,21 @@ def pairs_sum_to_target(list1, list2, target):
 
 """"""
 
+Copyright © 2022 AlgoExpert LLC. All rights reserved.
+
 def pairs_sum_to_target(list1, list2, target):
 
-    # Write your code here.
-    
-    pass
+    pairs = []
+
+    for i, value1 in enumerate(list1):
+
+        for j, value2 in enumerate(list2):
+
+            if value1 + value2 == target:
+
+                pairs.append([i, j])
+
+    return pairs
 
 """"""
 [course-site]: https://www.programmingexpert.io/index
