@@ -149,7 +149,108 @@ n = 3
 
 Sample Output:
 
-['Whatver', 'Ball', 'Rock']
+['Whatever', 'Ball', 'Rock']
+
+""""""
+
+- My Solution for Four -
+
+""""""
+def get_n_longest_unique_words(words, n):
+
+    frequency_dict = {}
+
+    list_of_unique_words = []
+
+    for word in words:  # make a dictionary that tracks the frequency of each word.
+
+        frequency_dict[word] = frequency_dict.get(word, 0) + 1
+
+    for key in frequency_dict:  # make a list of words with frequency 1.
+
+        if frequency_dict.get(key) == 1:
+
+            list_of_unique_words.append(key)
+
+    list_of_unique_words.sort(key=len, reverse=True)  # sort the list by word length in descending order.
+
+    n_words = list_of_unique_words[0:n]  # return a list of the first n words.
+
+    return n_words
+
+""""""
+
+""""""
+
+- Provided Solution One for Exercise Four -
+
+""""""
+
+Copyright © 2022 AlgoExpert LLC. All rights reserved.
+
+def get_n_longest_unique_words(words, n):
+
+    unique_words = get_unique_words(words)
+
+    longest_words = []
+
+    while len(longest_words) < n:
+
+        current_longest = ""
+
+        for word in unique_words:
+
+            if len(word) > len(current_longest):
+
+                current_longest = word
+
+        unique_words.remove(current_longest)
+
+        longest_words.append(current_longest)
+
+    return longest_words
+
+
+def get_unique_words(words):
+
+    unique_words = []
+
+    for word in words:
+
+        if words.count(word) == 1:
+
+            unique_words.append(word)
+
+    return unique_words
+
+""""""
+
+- Provided Solution Two for Exercise Three -
+
+""""""
+
+Copyright © 2022 AlgoExpert LLC. All rights reserved.
+
+def get_n_longest_unique_words(words, n):
+
+    unique_words = get_unique_words(words)
+
+    sorted_words = sorted(unique_words, key=len, reverse=True)
+
+    return sorted_words[:n]
+
+
+def get_unique_words(words):
+
+    unique_words = []
+
+    for word in words:
+
+        if words.count(word) == 1:
+        
+            unique_words.append(word)
+
+    return unique_words
 
 """"""
 
