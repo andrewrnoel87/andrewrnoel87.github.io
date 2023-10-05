@@ -8,7 +8,7 @@ Today, I covered the Programming Fundamentals Assessment from the [programmingex
 
 """"""
 
-"""Exercise One"""
+# """Exercise One"""
 
 """"""
 
@@ -157,7 +157,7 @@ I like the way the instructor handled the plural with a suffix.
 
 """"""
 
-"""Exercise Two"""
+# """Exercise Two"""
 
 """"""
 
