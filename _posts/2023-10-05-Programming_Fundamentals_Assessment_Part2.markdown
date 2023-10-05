@@ -8,7 +8,7 @@ Today, I covered more exercises from the Programming Fundamentals Assessment fro
 
 """"""
 
-"""Exercise Three"""
+# """Exercise Three"""
 
 """"""
 
@@ -68,7 +68,7 @@ def sort_employees(employees, sort_by):
 
 """"""
 
-# Copyright © 2022 AlgoExpert LLC. All rights reserved.
+Copyright © 2022 AlgoExpert LLC. All rights reserved.
 
 def sort_employees(employees, sort_by):
 
@@ -112,12 +112,12 @@ def sort_employees(employees, sort_by):
 
 """"""
 
-# Copyright © 2022 AlgoExpert LLC. All rights reserved.
+Copyright © 2022 AlgoExpert LLC. All rights reserved.
 
 def sort_employees(employees, sort_by):
 
     sort_indices = ["name", "age", "salary"]
-    
+
     sort_index = sort_indices.index(sort_by)
 
     sorted_employees = sorted(employees, key=lambda x: x[sort_index])
