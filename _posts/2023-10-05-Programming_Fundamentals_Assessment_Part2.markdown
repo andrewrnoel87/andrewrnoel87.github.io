@@ -334,4 +334,8 @@ def pairs_sum_to_target(list1, list2, target):
     return pairs
 
 """"""
+
+This solution makes me realize I am not comfortable with enumerate() yet.
+
+""""""
 [course-site]: https://www.programmingexpert.io/index
