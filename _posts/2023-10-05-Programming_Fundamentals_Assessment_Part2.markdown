@@ -156,6 +156,7 @@ Sample Output:
 - My Solution for Four -
 
 """"""
+
 def get_n_longest_unique_words(words, n):
 
     frequency_dict = {}
@@ -247,7 +248,7 @@ def get_unique_words(words):
     for word in words:
 
         if words.count(word) == 1:
-        
+
             unique_words.append(word)
 
     return unique_words
