@@ -185,11 +185,11 @@ def caesar_cipher(string, offset):
 
     shifted_alphabet = [i for i in alphabet]
 
-    for i in range(len(shifted_alphabet)):
+    for i in range(len(shifted_alphabet)):  # creating the shifted alphabet
 
         shifted_alphabet[i] = alphabet[i - offset]
 
-    for i in range(len(string_list)):
+    for i in range(len(string_list)):  # swaping the string char with the shifted char
 
         char = string_list[i]
 
@@ -199,7 +199,7 @@ def caesar_cipher(string, offset):
 
     coded_string = ""
 
-    for elem in string_list:
+    for elem in string_list:  # changing the coded list back into a string
 
         coded_string += elem
     
