@@ -63,4 +63,5 @@ def create_strings_from_characters(frequencies, string1, string2):
 """"""
 
 """"""
+
 [course-site]: https://www.programmingexpert.io/index
