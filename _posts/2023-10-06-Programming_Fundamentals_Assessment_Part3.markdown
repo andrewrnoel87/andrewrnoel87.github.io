@@ -44,7 +44,7 @@ def create_strings_from_characters(frequencies, string1, string2):
 
     # Write your code here.
 
-    pass
+    pass #
 
 """"""
 
@@ -57,7 +57,7 @@ def create_strings_from_characters(frequencies, string1, string2):
 def create_strings_from_characters(frequencies, string1, string2):
 
     # Write your code here.
-    
+
     pass
 
 """"""
