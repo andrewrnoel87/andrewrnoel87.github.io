@@ -25,7 +25,7 @@ A method is a function defined inside of a class definition. There are three imp
 
 - It is good practice to initialize all the default attributes in the \_\_init\_\_ method.
 
-- Getter and setter methods are <ins>___commonly<ins>___ used to encaspulate attributes. 
+- Getter and setter methods are ___<ins>commonly<ins>___ used to encaspulate attributes. 
 
 """"""
 
@@ -64,7 +64,7 @@ class Group:
         merged_members = self.members + group.members
 
         merged_group = Group(self.name + '&' + group.name, merged_members)
-        
+
         return merged_group
 
 """"""
