@@ -25,7 +25,7 @@ A method is a function defined inside of a class definition. There are three imp
 
 - It is good practice to initialize all the default attributes in the \_\_init\_\_ method.
 
-- Getter and setter methods are commonly used to <u>encaspulate<u> attributes. 
+- Getter and setter methods are commonly used to <u>encaspulate attributes. 
 
 """"""
 
