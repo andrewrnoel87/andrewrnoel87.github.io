@@ -1,0 +1,16 @@
+---
+layout: default
+title:  "Methods"
+date:   2023-10-11 15:30:00 -0400
+categories: blog
+---
+
+Today, I cover Methods from the [programmingexpert.io][course-site] course.
+
+""""""
+
+
+
+""""""
+
+[course-site]: https://www.programmingexpert.io/index
