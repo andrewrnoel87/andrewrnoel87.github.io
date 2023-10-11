@@ -57,7 +57,7 @@ class Group:
 
 """"""
 
-- Example Inputs;
+- Example Inputs:
 
 g1 = Group('A-Team', ['Tim', 'Joe'])
 
@@ -77,7 +77,23 @@ members = g1.get_members()
 
 print(members)
 
-print(g1.merge(g2).get_members())
+g3 = g1.merge(g2)
+
+print(g3.name)
+
+print(g3.get_members())
+
+""""""
+
+- Example Outputs:
+
+['Billy', 'Joe', 'Sally', 'Tim']
+
+['Billy', 'Sally', 'Tim']
+
+A-Team&tunnelbees
+
+['Billy', 'Sally', 'Tim', 'a', 'b', 'c']
 
 """"""
 
