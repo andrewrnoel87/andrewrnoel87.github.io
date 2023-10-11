@@ -25,7 +25,7 @@ A method is a function defined inside of a class definition. There are three imp
 
 - It is good practice to initialize all the default attributes in the __init__ method.
 
-- Getter and setter methods are commonly used to encaspulate attributes. 
+- Getter and setter methods _are_ ___commonly___ used to encaspulate attributes. 
 
 """"""
 
