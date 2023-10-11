@@ -23,9 +23,9 @@ A method is a function defined inside of a class definition. There are three imp
 
 - Instance methods all take in the self parameter.
 
-- It is good practice to initialize all the default attributes in the \_\_init\_\_ method.
+- It is good practice to ___initialize___ all the default attributes in the \_\_init\_\_ method.
 
-- _Getter_ and _setter_ methods are commonly used to <u>__encaspulate__<u> attributes. 
+- _Getter_ and _setter_ methods are commonly used to __encaspulate__ attributes. 
 
 """"""
 
