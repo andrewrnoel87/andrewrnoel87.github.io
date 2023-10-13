@@ -19,7 +19,69 @@ Today, I cover __Properties__ from the [programmingexpert.io][course-site] cours
 
 """"""
 
+# Legacy Property Example
 
+""""""
+
+class BankAccount:
+
+    def __init__(self, account_holder_name):
+
+        self.account_holder_name = account_holder_name
+
+        self._balance = 0
+
+    def get_balance(self):
+
+        return round(self._balance, 0)
+
+    def set_balance(self, balance):
+
+        if type(balance) not in [int, float]:
+
+            return
+
+        if balance < 0 or balance >= 100000:
+
+            return
+      
+        self._balance = balance
+
+    balance = property(get_balance, set_balance)
+
+""""""
+
+# @decorator Property Example
+
+""""""
+
+class BankAccount:
+
+    def __init__(self, account_holder_name):
+
+        self.account_holder_name = account_holder_name
+
+        self._balance = 0
+
+    @property  # getter
+
+    def balance(self):
+
+        return round(self._balance, 0)
+
+    @balance.setter  # setter
+
+    def balance(self, balance):
+
+        if type(balance) not in [int, float]:
+
+            return
+
+        if balance < 0 or balance >= 100000:
+
+            return
+      
+        self._balance = balance
 
 """"""
 
