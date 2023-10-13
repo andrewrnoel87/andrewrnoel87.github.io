@@ -15,7 +15,7 @@ My plan for now is to work through the [programmingexpert.io][course-site] cours
 
 """"""
 
-- """Phase 1 - Programming Fundamentals"""
+# Phase 1 - Programming Fundamentals
 
 """"""
 
@@ -73,7 +73,7 @@ __Lessons__
 
 """"""
 
-- """Phase 2 - Object-Oriented Programming"""
+# Phase 2 - Object-Oriented Programming
 
 """"""
 
@@ -101,7 +101,7 @@ __Lessons__
 
 """"""
 
-- """Phase 3 - Advanced Programming"""
+# Phase 3 - Advanced Programming
 
 """"""
 
@@ -137,13 +137,13 @@ __Lessons__
 
 """"""
 
-- """Phase 4 - Software Design"""
+# Phase 4 - Software Design
 
 """"""
 
 __Lessons__
 
-"""Design Principles
+- Design Principles
 
 1 - Divide And Conquer
 
@@ -169,13 +169,13 @@ __Lessons__
 
 """"""
 
-- """Phase 5 - Software Engineering Tools"""
+# Phase 5 - Software Engineering Tools
 
 """"""
 
 __Lessons__
 
-"""Bash
+- Bash
 
 1 - Introduction To Bash
 
@@ -189,7 +189,7 @@ __Lessons__
 
 6 - Searching And Filtering
 
-"""Integrated Development Environments (IDEs)
+- Integrated Development Environments (IDEs)
 
 7 - What Are IDEs?
 
@@ -203,7 +203,7 @@ __Lessons__
 
 12 - Other Editors and IDEs
 
-"""Git & GitHub Fundamentals
+- Git & GitHub Fundamentals
 
 13 - Introduction To Version Control
 
@@ -215,7 +215,7 @@ __Lessons__
 
 """"""
 
-- """Phase 6 - Programming With Go"""
+# Phase 6 - Programming With Go
 
 """"""
 
@@ -255,7 +255,7 @@ __Lessons__
 
 """"""
 
-- """Phase 7 - Projects"""
+# Phase 7 - Projects
 
 """"""
 
