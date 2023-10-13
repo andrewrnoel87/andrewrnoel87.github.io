@@ -1,11 +1,11 @@
 ---
 layout: default
-title:  "Properties"
+title:  "Properties, Class Methods, and Class Attributes"
 date:   2023-10-13 10:53:00 -0400
 categories: blog
 ---
 
-Today, I cover __Properties__ from the [programmingexpert.io][course-site] course.
+Today, I cover __Properties__, __Class Methods__, and __Class Attributes__ from the [programmingexpert.io][course-site] course.
 
 """"""
 
@@ -90,6 +90,22 @@ class BankAccount:
 account = BankAccount("Antoine")
 
 account.balance = 56.2
+
+""""""
+
+""""""
+
+# Key Terms
+
+<u>Class Attribute<u>
+
+An __attribute__ is an __object__ that belongs either to a class, or to an instance of that class. Attributes of an object can be referenced using the __.__ notation:  __print(person.name)__.
+
+A __class attribute__ is an attribute that is associated with a class, not an instance of a class. Class attributes can be modified and accessed by using the class name directly or by using an instance of the class. Typically class attributes are defined at the top of the class, inside the class body.
+
+<u>Class Method<u>
+
+A __class method__ is a method that has a mandatory __cls__ parameter and can only access class attributes and other class methods. It does not act on an instance of a class, but on the class itself. Class methods are denoted with the __@classmethod__ decorator.
 
 """"""
 
