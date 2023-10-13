@@ -4,7 +4,7 @@ title:  "Mutability"
 date:   2023-09-27 15:43:00 -0400
 categories: blog
 ---
-Today I covered Mutability in Python from the [programmingexpert.io][course-site] course.
+Today I covered __Mutability__ in Python from the [programmingexpert.io][course-site] course.
 
 """"""
 

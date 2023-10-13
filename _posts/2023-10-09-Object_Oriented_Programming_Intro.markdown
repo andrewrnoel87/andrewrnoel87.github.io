@@ -5,7 +5,7 @@ date:   2023-10-09 16:04:00 -0400
 categories: blog
 ---
 
-Today, I cover the Object Oriented Programming Intro from the [programmingexpert.io][course-site] course.
+Today, I cover the __Object Oriented Programming Intro__ from the [programmingexpert.io][course-site] course.
 
 """"""
 

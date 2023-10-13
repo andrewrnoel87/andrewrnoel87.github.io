@@ -5,7 +5,7 @@ date:   2023-10-11 15:30:00 -0400
 categories: blog
 ---
 
-Today, I cover Methods from the [programmingexpert.io][course-site] course.
+Today, I cover __Methods__ from the [programmingexpert.io][course-site] course.
 
 """"""
 

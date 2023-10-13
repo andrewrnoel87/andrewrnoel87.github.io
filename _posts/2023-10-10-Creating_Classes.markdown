@@ -5,7 +5,7 @@ date:   2023-10-10 15:39:00 -0400
 categories: blog
 ---
 
-Today, I cover the Creating Classes from the [programmingexpert.io][course-site] course.
+Today, I cover the __Creating Classes__ from the [programmingexpert.io][course-site] course.
 
 """"""
 

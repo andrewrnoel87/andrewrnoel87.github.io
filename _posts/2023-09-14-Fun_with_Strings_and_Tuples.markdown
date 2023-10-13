@@ -4,7 +4,7 @@ title:  "Fun with Strings and Tuples"
 date:   2023-09-14 15:15:00 -0400
 categories: blog
 ---
-Today I covered Strings and Tuples from the [programmingexpert.io][course-site] course. 
+Today I covered __Strings__ and __Tuples__ from the [programmingexpert.io][course-site] course. 
 
 """"""
 

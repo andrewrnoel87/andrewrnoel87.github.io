@@ -4,7 +4,7 @@ title:  "Programming Fundamentals Assessment Part 1"
 date:   2023-10-04 14:52:00 -0400
 categories: blog
 ---
-Today, I covered the Programming Fundamentals Assessment from the [programmingexpert.io][course-site] course.
+Today, I covered the __Programming Fundamentals Assessment__ from the [programmingexpert.io][course-site] course.
 
 """"""
 

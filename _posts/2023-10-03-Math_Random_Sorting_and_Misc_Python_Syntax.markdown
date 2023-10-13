@@ -4,7 +4,7 @@ title:  "Math, Random, Sorting, and Misc. Python Syntax"
 date:   2023-10-03 10:23:00 -0400
 categories: blog
 ---
-Today I covered Math, Sorting, and Misc. Python Syntax in Python from the [programmingexpert.io][course-site] course.
+Today I covered __Math__, __Sorting__, and __Misc. Python Syntax__ in Python from the [programmingexpert.io][course-site] course.
 
 """"""
 

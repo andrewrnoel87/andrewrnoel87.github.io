@@ -4,7 +4,7 @@ title:  "Functions"
 date:   2023-09-26 15:33:00 -0400
 categories: blog
 ---
-Today I covered Functions from the [programmingexpert.io][course-site] course.
+Today I covered __Functions__ from the [programmingexpert.io][course-site] course.
 
 """"""
 

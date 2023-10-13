@@ -4,7 +4,7 @@ title:  "The Mighty Loop"
 date:   2023-09-15 14:03:00 -0400
 categories: blog
 ---
-Today I covered 'For' Loops  and 'While' Loops from the [programmingexpert.io][course-site] course.
+Today I covered __'For' Loops__  and __'While' Loops__ from the [programmingexpert.io][course-site] course.
 
 """"""
 

@@ -4,7 +4,7 @@ title:  "Time for a Slice and a Dictionary"
 date:   2023-09-18 13:03:00 -0400
 categories: blog
 ---
-Today I covered Slices, and Dictionaries from the [programmingexpert.io][course-site] course. 
+Today I covered __Slices__, and __Dictionaries__ from the [programmingexpert.io][course-site] course. 
 
 """"""
 

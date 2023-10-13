@@ -19,7 +19,7 @@ My plan for now is to work through the [programmingexpert.io][course-site] cours
 
 """"""
 
-Lessons
+__Lessons__
 
 1 - Introduction
 
@@ -77,7 +77,7 @@ Lessons
 
 """"""
 
-Lessons
+__Lessons__
 
 1 - Introduction
 
@@ -105,7 +105,7 @@ Lessons
 
 """"""
 
-Lessons
+__Lessons__
 
 1 - Modules and Packages
 
@@ -141,7 +141,7 @@ Lessons
 
 """"""
 
-Lessons
+__Lessons__
 
 """Design Principles
 
@@ -173,7 +173,7 @@ Lessons
 
 """"""
 
-Lessons
+__Lessons__
 
 """Bash
 
@@ -219,7 +219,7 @@ Lessons
 
 """"""
 
-Lessons
+__Lessons__
 
 1 - Introduction To Go
 

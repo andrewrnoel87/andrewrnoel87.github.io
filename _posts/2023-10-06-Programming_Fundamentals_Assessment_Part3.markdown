@@ -4,7 +4,7 @@ title:  "Programming Fundamentals Assessment Part 3"
 date:   2023-10-06 10:42:00 -0400
 categories: blog
 ---
-Today, I cover the last exercise from the Programming Fundamentals Assessment from the [programmingexpert.io][course-site] course.
+Today, I cover the last exercise from the __Programming Fundamentals Assessment__ from the [programmingexpert.io][course-site] course.
 
 """"""
 

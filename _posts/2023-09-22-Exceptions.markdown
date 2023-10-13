@@ -4,7 +4,7 @@ title:  "Exceptions"
 date:   2023-09-22 13:46:00 -0400
 categories: blog
 ---
-Today I covered Exceptions from the [programmingexpert.io][course-site] course.
+Today I covered __Exceptions__ from the [programmingexpert.io][course-site] course.
 
 """"""
 

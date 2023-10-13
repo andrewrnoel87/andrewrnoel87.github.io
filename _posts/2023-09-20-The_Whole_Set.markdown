@@ -4,7 +4,7 @@ title:  "The Whole Set"
 date:   2023-09-20 13:46:00 -0400
 categories: blog
 ---
-Today I covered Sets from the [programmingexpert.io][course-site] course. 
+Today I covered __Sets__ from the [programmingexpert.io][course-site] course. 
 
 """"""
 
