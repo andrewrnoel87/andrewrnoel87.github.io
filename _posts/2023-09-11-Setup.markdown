@@ -14,4 +14,4 @@ I use Visual Studio Code to create my .markdown files for the posts. Then, I use
 
 I like to listen to LoFi music as I study/work.
 
-GFuel also seems to be important to the process.
+GFuel is helpful as well.
