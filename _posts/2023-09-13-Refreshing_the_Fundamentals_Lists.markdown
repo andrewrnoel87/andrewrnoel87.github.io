@@ -6,7 +6,7 @@ categories: blog
 ---
 Studying from the [programmingexpert.io][course-site] course today. The course is teaching using Python. I am using the course to refresh many of the things I learned in college. 
 
-I went through __Data Types__, __Comments__, __Variables__, __Printing__, __Console Input__, and __Arithmetic Operators__ before I started this blog.
+Before I started this blog, I went through __Data Types__, __Comments__, __Variables__, __Printing__, __Console Input__, and __Arithmetic Operators__.
 
 Today, I covered __Type Conversions__, __Conditions__, __Compound Conditions__, __Conditionals__, and __Lists__.
 
