@@ -143,7 +143,7 @@ __Lessons__
 
 __Lessons__
 
-- Design Principles
+<u>Design Principles<u>
 
 1 - Divide And Conquer
 
@@ -175,7 +175,7 @@ __Lessons__
 
 __Lessons__
 
-- Bash
+<u>Bash<u>
 
 1 - Introduction To Bash
 
@@ -189,7 +189,7 @@ __Lessons__
 
 6 - Searching And Filtering
 
-- Integrated Development Environments (IDEs)
+<u>Integrated Development Environments (IDEs)<u>
 
 7 - What Are IDEs?
 
@@ -203,7 +203,7 @@ __Lessons__
 
 12 - Other Editors and IDEs
 
-- Git & GitHub Fundamentals
+<u>Git & GitHub Fundamentals<u>
 
 13 - Introduction To Version Control
 
