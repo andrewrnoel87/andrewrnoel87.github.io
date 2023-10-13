@@ -97,6 +97,10 @@ account.balance = 56.2
 
 # Key Terms
 
+<u>Property<u>
+
+A __property__ is a special attribute on an instance or class that make it possible to enforce specific behavior when accessing or modifying an attribute.
+
 <u>Class Attribute<u>
 
 An __attribute__ is an __object__ that belongs either to a class, or to an instance of that class. Attributes of an object can be referenced using the __.__ notation:  print(__person.name__).
@@ -151,23 +155,23 @@ class Employee:
 
 <u>Sample Code Usage<u>
 
->>> e1 = Employee("George", 34, 65000)
+\>>> e1 = Employee("George", 34, 65000)
 
->>> print(Employee.average_age)
+\>>> print(Employee.average_age)
 
 34.0
 
->>> print(Employee.average_salary)
+\>>> print(Employee.average_salary)
 
 65000.0
 
->>> e2 = Employee("Sarah", 25, 95000)
+\>>> e2 = Employee("Sarah", 25, 95000)
 
->>> print(Employee.average_age)
+\>>> print(Employee.average_age)
 
 29.5
 
->>> print(Employee.average_salary)
+\>>> print(Employee.average_salary)
 
 80000.0
 
