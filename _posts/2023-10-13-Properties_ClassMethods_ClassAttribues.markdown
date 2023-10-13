@@ -123,11 +123,11 @@ A __class method__ is a method that has a mandatory __cls__ parameter and can on
 
 class Employee:
 
-    number_of_employees = 0  # class attribute
+    number_of_employees = 0  # setting initial class attribute
 
-    average_age = 0  # class attribute
+    average_age = 0  # setting initial class attribute
 
-    average_salary = 0  # class attribute
+    average_salary = 0  # setting initial class attribute
 
     def __init__(self, name, age, salary):
 
@@ -148,6 +148,28 @@ class Employee:
         Employee.number_of_employees += 1  # updating class attribute
 
 """"""
+
+<u>Sample Code Usage<u>
+
+>>> e1 = Employee("George", 34, 65000)
+
+>>> print(Employee.average_age)
+
+34.0
+
+>>> print(Employee.average_salary)
+
+65000.0
+
+>>> e2 = Employee("Sarah", 25, 95000)
+
+>>> print(Employee.average_age)
+
+29.5
+
+>>> print(Employee.average_salary)
+
+80000.0
 
 """"""
 
