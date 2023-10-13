@@ -85,4 +85,12 @@ class BankAccount:
 
 """"""
 
+<u>Sample Code Usage<u>
+
+account = BankAccount("Antoine")
+
+account.balance = 56.2
+
+""""""
+
 [course-site]: https://www.programmingexpert.io/index
