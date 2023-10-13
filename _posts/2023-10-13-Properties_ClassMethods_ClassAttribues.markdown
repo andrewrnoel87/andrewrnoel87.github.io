@@ -87,9 +87,9 @@ class BankAccount:
 
 <u>Sample Code Usage<u>
 
-account = BankAccount("Antoine")
+\>>> account = BankAccount("Antoine")
 
-account.balance = 56.2
+\>>> account.balance = 56.2
 
 """"""
 
@@ -174,6 +174,78 @@ class Employee:
 \>>> print(Employee.average_salary)
 
 80000.0
+
+""""""
+
+# Class Method Example
+
+""""""
+
+class Temperature:
+
+    kelvin = 0
+
+    min_temperature = 0
+
+    max_temperature = 1000
+
+    def __init__(self, kelvin):
+
+        if kelvin < self.min_temperature or kelvin > self.max_temperature:
+
+            raise Exception("Invalid temperature.")
+
+        else:
+
+            self.kelvin = kelvin
+
+    @classmethod
+
+    def update_min_temperature(cls, kelvin):
+
+        if kelvin > cls.max_temperature:
+
+            raise Exception("Invalid temperature.")
+
+        else:
+
+            cls.min_temperature = kelvin
+
+    @classmethod
+
+    def update_max_temperature(cls, kelvin):
+
+        if kelvin < cls.min_temperature:
+
+            raise Exception("Invalid temperature.")
+
+        else:
+
+            cls.max_temperature = kelvin
+
+""""""
+
+<u>Sample Code Usage<u>
+
+\>>> t1 = Temperature(260)
+
+\>>> Temperature.update_max_temperature(270)
+
+\>>> Temperature.update_min_temperature(680)
+
+Exception: Invalid temperature.
+
+\>>> t2 = Temperature(280)
+
+Exception: Invalid temperature.
+
+\>>> Temperature.update_min_temperature(100)
+
+\>>> t3 = Temperature(120)
+
+\>>> Temperature.update_max_temperature(90)
+
+Exception: Invalid temperature.
 
 """"""
 
