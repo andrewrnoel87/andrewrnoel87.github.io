@@ -109,8 +109,45 @@ A __class method__ is a method that has a mandatory __cls__ parameter and can on
 
 """"""
 
+# Notes
 
+- In Python, class attributes are attributes associated with a class, not an instance of a class. Class attributes can be accessed by using the class name or from any instance of the class.
 
+- Class methods accept a mandatory cls parameter and are denoted using the @classmethod decorator, while instance attributes accept a mandatory self parameter. Class methods don't have access to an instance and therefore, can only modify and access class attributes and can only call other class (or static) methods. Instance attributes have access to an instance and can modify and access both instance and class attributes as well as call any other methods defined in the class.
+
+""""""
+
+# Class Attribute Example
+
+""""""
+
+class Employee:
+
+    number_of_employees = 0  # class attribute
+
+    average_age = 0  # class attribute
+
+    average_salary = 0  # class attribute
+
+    def __init__(self, name, age, salary):
+
+        self.name = name  # setting initial instance attribute
+
+        self.age = age  # setting initial instance attribute
+
+        self.salary = salary  # setting initial instance attribute
+
+        total_age = Employee.average_age * Employee.number_of_employees
+
+        total_salary = Employee.average_salary * Employee.number_of_employees
+
+        Employee.average_age = (total_age + age) / (Employee.number_of_employees + 1)  # updating class attribute
+
+        Employee.average_salary = (total_salary + salary) / (Employee.number_of_employees + 1)  # updating class attribute
+
+        Employee.number_of_employees += 1  # updating class attribute
+
+""""""
 
 """"""
 
