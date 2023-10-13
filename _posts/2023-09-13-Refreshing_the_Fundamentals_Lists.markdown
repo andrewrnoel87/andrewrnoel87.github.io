@@ -8,7 +8,7 @@ Studying from the [programmingexpert.io][course-site] course today. The course i
 
 I went through __Data Types__, __Comments__, __Variables__, __Printing__, __Console Input__, and __Arithmetic Operators__ before I started this blog.
 
-Today I covered __Type Conversions__, __Conditions__, __Compound Conditions__, __Conditionals__, and __Lists__.
+Today, I covered __Type Conversions__, __Conditions__, __Compound Conditions__, __Conditionals__, and __Lists__.
 
 """"""
 
