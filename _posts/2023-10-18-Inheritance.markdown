@@ -43,11 +43,11 @@ Method __overriding__ is when a programmer re-defines a method on a class that w
 
 - __isinstance(obj, class)__ returns whether an object is an instance of a class or of a subclass thereof. This helps track inheritance.
 
-- IS A rule 
+- The __IS A__ rule in Python is theoretical. It is a way to check inheritance relationships. For example, it states that if _owner_ inherits from _person_, then _owner_ __is a__ a _person_. If _owner_ is __not__ a _person_ then the class Owner(Person) is an incorrect inheritance. The __IS A__ rule helps decide inheritance.
 
-- Multiple Inheritance
+- Python uses a Method Resolution Order or MRO to make __Multiple Inheritance__ possible. This gives a way to know which superclass to look in when using multiple inheritance. Python's MRO tells the compiler to look in the main class, then look in the first listed superclass, then the second listed superclass, and so on for the constructor, the method, or other attributes it is looking for. Example below.
 
-- Duck Typing
+- Duck Typing is the philosophy that, in python, if something acts like a duck, walks like a duck, quacks like a duck, it must be a duck. Which leads code to working or blowing up at runtime. This keeps thing from getting held up at the complier. Example below.
 
 """"""
 
@@ -87,6 +87,36 @@ class Lizard(Reptile):
     def __init__(self, age, weight, height, leg_count, color):
         super().__init__(age, weight, height, leg_count)
         self.color = color
+
+""""""
+
+# Multiple Inheritance Example
+
+""""""
+
+class A:
+
+    def __init__(self):
+        print("A")
+
+class B:
+
+    def __init__(self):
+        print("B")
+
+class C(A, B):  # A and B are parents to C; MRO checks C, does not find anything, so it checks A, if nothing was in A, it would move unto B.
+
+    pass
+
+\>>> c = C()  # this outputs... A
+
+""""""
+
+# Duck Typing Example
+
+""""""
+
+
 
 """"""
 
