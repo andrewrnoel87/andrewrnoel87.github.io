@@ -21,7 +21,7 @@ When a class __A__ inherits from class __B__, we say that class __B__ is a _pare
 
 <u>Polymorphism<u>
 
-Polymorphism is a term originating from biology, where _poly_ means many and _morphism_ means forms (this is a simplification). In programming, polymorphism refers to the ability for an object to behave in differnet ways and exhibit different behaviour based on the context it's ised in.
+__Polymorphism__ is a term originating from biology, where _poly_ means many and _morphism_ means forms (this is a simplification). In programming, polymorphism refers to the ability for an object to behave in differnet ways and exhibit different behaviour based on the context it's ised in.
 
 <u>Method Overriding<u>
 
