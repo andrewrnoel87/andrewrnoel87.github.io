@@ -37,4 +37,44 @@ Method __overriding__ is when a programmer re-defines a method on a class that w
 
 """"""
 
+# Inheritance Example
+
+""""""
+
+class Animal:
+
+    def __init__(self, age, weight, height):
+
+        self.age = age
+        self.weight = weight
+        self.height = height
+
+class Mammal(Animal):
+
+    def __init__(self, age, weight, height, sex):
+        super().__init__(age, weight, height)
+        self.sex = sex
+
+class Reptile(Animal):
+
+    def __init__(self, age, weight, height, leg_count):
+        super().__init__(age, weight, height)
+        self.leg_count = leg_count
+
+class Monkey(Mammal):
+
+    fingers = 5
+    def __init__(self, age, weight, height, sex, color):
+        super().__init__(age, weight, height, sex)
+        self.color = color
+
+class Lizard(Reptile):
+
+    tail = True
+    def __init__(self, age, weight, height, leg_count, color):
+        super().__init__(age, weight, height, leg_count)
+        self.color = color
+
+""""""
+
 [course-site]: https://www.programmingexpert.io/index
