@@ -116,7 +116,38 @@ class C(A, B):  # A and B are parents to C; MRO checks C, does not find anything
 
 """"""
 
+class Duck:
 
+    def swim(self):
+        print('Swimming duck')
+
+    def fly(self):
+        print('Flying duck')
+
+class Whale:
+
+    def swim(self):
+        print('Swimming whale')
+
+<u>Input:<u>
+
+\>>> animals = [Duck(), Duck(), Whale()]
+
+\>>> for animal in animals:
+
+        animal.swim()
+
+        animal.fly()  #  Runs until it cannot. Does not get stopped by compiler.
+
+<u>Output:<u>
+
+Swimming duck
+
+Flying duck
+
+Swimming whale
+
+AttributeError: 'Whale object has no attribute 'Fly'
 
 """"""
 
