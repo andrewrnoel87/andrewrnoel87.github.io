@@ -21,7 +21,7 @@ When a class __A__ inherits from class __B__, we say that class __B__ is a _pare
 
 <u>Polymorphism<u>
 
-__Polymorphism__ is a term originating from biology, where _poly_ means many and _morphism_ means forms (this is a simplification). In programming, polymorphism refers to the ability for an object to behave in differnet ways and exhibit different behaviour based on the context it's ised in.
+__Polymorphism__ is a term originating from biology, where _poly_ means many and _morphism_ means forms (this is a simplification). In programming, polymorphism refers to the ability for an object to behave in differnet ways and exhibit different behaviour based on the context it's used in.
 
 <u>Method Overriding<u>
 
@@ -30,6 +30,8 @@ Method __overriding__ is when a programmer re-defines a method on a class that w
 """"""
 
 # Notes
+
+- __Inheritance__ is important because one class can inherit the functionality of another class. Common functionality makes it easier to change and apply updates in the future.
 
 - Child class, subclass and derived class are all synonymous for a class that inherits from another class.
 
@@ -44,7 +46,6 @@ Method __overriding__ is when a programmer re-defines a method on a class that w
 class Animal:
 
     def __init__(self, age, weight, height):
-
         self.age = age
         self.weight = weight
         self.height = height
