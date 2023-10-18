@@ -43,9 +43,11 @@ Method __overriding__ is when a programmer re-defines a method on a class that w
 
 - __isinstance(obj, class)__ returns whether an object is an instance of a class or of a subclass thereof. This helps track inheritance.
 
--
+- IS A rule 
 
--
+- Multiple Inheritance
+
+- Duck Typing
 
 """"""
 
