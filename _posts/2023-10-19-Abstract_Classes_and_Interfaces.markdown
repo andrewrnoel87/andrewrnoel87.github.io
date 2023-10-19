@@ -98,7 +98,7 @@ class RandomGuesser(AbstractGame):
 
 <u>Interface<u>
 
-In Python, there is no formal definition for an __interface__ but we can still represent one by creating a class that only defines abstract methods. An interface is designed to be used as an abstract data type. An interface enforces that the classes that implement it, define specific methods and behaviour.
+In Python, there is no formal definition for an __interface__ but we can still represent one by creating a class that only defines abstract methods. An interface is designed to be used as an abstract data type that enforces the following: the classes that implement it will define specific methods and behaviour.
 
 """"""
 
