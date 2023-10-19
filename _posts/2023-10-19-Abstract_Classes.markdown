@@ -90,7 +90,7 @@ class RandomGuesser(AbstractGame):
 
 \>>>for game in games:
 
-\>>>    game.start()
+\>>>    game.start()  # each subclass of AbstractGame will inherit .start()
 
 """"""
 
