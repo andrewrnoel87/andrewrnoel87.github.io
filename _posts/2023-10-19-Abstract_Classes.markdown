@@ -37,7 +37,60 @@ An __abstract class__ is a class that contains at least one abstract method and 
 
 """"""
 
-pass
+import random
+
+class AbstractGame:  # an abstract class, not to be instantiated
+
+    def start(self):  # concrete instance method
+        while True:
+            start = input("Would you like to play? ")
+            if start.lower() == "yes" or start.lower() == "y":
+                break
+        self.play()    
+            
+
+    def end(self):  # concrete instance method
+        print("The game has ended.")
+        self.reset()
+    
+    def play(self):  # abstract method
+        raise NotImplementedError("play() has not been implemented yet")
+    
+    def reset(self):  # abstract method
+        raise NotImplementedError("reset() has not been implemented yet")
+    
+class AnotherGame(AbstractGame):
+
+    pass
+
+class RandomGuesser(AbstractGame):
+
+    def __init__(self, rounds):
+        self.rounds = rounds
+        self.round = 0
+
+    def reset(self):  # implements reset()
+        self.round = 0
+
+    def play(self):  # implements play()
+        while self.round < self.rounds:
+            self.round += 1
+            print(f"Welcome to round {self.round}. Let's Begin!")
+            random_num = random.randint(1, 10)
+            while True:
+                guess = input("Enter a number between 1 - 10: ")
+                if int(guess) == random_num:
+                    print("You got it!")
+                    break
+        self.end()
+
+<u>Sample Input<u>
+
+games = [RandomGuesser(1), AnotherGame()]  # Will run until AnotherGame() is called. The system will throw an error because reset() and play() are not implemented.
+
+for game in games:
+
+    game.start()
 
 """"""
 
