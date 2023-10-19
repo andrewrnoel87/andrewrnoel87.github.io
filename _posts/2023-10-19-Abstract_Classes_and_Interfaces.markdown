@@ -1,15 +1,15 @@
 ---
 layout: default
-title:  "Abstract Classes"
+title:  "Abstract Classes and Interfaces"
 date:   2023-10-19 12:24:00 -0400
 categories: blog
 ---
 
-Today, I cover __Abstract Classes__ from the [programmingexpert.io][course-site] course.
+Today, I cover __Abstract Classes__ and __Interfaces__ from the [programmingexpert.io][course-site] course.
 
 """"""
 
-# Key Terms
+# Abstract Classes Key Terms
 
 <u>Abstract Method<u>
 
@@ -21,7 +21,7 @@ An __abstract class__ is a class that contains at least one abstract method and 
 
 """"""
 
-# Notes
+# Abstract Class Notes
 
 - An __abstract class__ is designed to act as the base class in an inheritance hierarchy and is not designed to be instantiated. Abstract classes usually contain abstract methods that are meant to be implemented by classes that inherit from them.
 
@@ -91,6 +91,66 @@ class RandomGuesser(AbstractGame):
 \>>>for game in games:
 
 \>>>    game.start()  # each subclass of AbstractGame will inherit .start()
+
+""""""
+
+# Interfaces Key Terms
+
+<u>Interface<u>
+
+In Python, there is no formal definition for an __interface__ but we can still represent one by creating a class that only defines abstract methods. An interface is designed to be used as an abstract data type. An interface enforces that the classes that implement it, define specific methods and behaviour.
+
+""""""
+
+# Interface Notes
+
+""""""
+
+- Interfaces, like abstract classes, should not be instantiated. There are meant to act as an abstract data type that classes will implement.
+
+- Unlike abstract classes the only methods allowed in an interface are abstract. An interface does not provide any concrete methods or behavior.
+
+- An interface is an abstract data type that is meant to be implemented by a class. Any class that implements (in Python, inherits) an interface must implement all of the methods defined in the interface. This makes the interface act like a blueprint for the class. Interfaces provide no concrete implementations and do not reduce the amount of code needed for classes implementing them.
+
+""""""
+
+# Interface Example
+
+""""""
+
+import math
+
+class ShapeInterface:
+
+    def get_area(self):
+        raise NotImplementedError()
+
+    def get_perimeter(self):
+        raise NotImplementedError()
+
+
+class Square(ShapeInterface):  # Implements all methods inherited from interface
+
+    def __init__(self, side_length):
+        self.side_length = side_length
+
+    def get_area(self):
+        return self.side_length * self.side_length
+
+    def get_perimeter(self):
+        return self.side_length * 4
+
+
+class Circle(ShapeInterface):  # Implements all methods inherited from interface
+
+    def __init__(self, radius):
+        self.radius = radius
+
+    def get_area(self):
+        return math.pi * (self.radius ** 2)
+
+    def get_perimeter(self):
+        return 2 * math.pi * self.radius
 
 """"""
 
