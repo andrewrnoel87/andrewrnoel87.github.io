@@ -112,7 +112,7 @@ In Python, there is no formal definition for an __interface__ but we can still r
 
 - An interface is an abstract data type that is meant to be implemented by a class. Any class that implements (in Python, inherits) an interface must implement all of the methods defined in the interface. This makes the interface act like a blueprint for the class. Interfaces provide no concrete implementations and do not reduce the amount of code needed for classes implementing them.
 
-- Python has __type hinting__ to hint at what a parameter's type should be. The typing is not actually enforced though. Example: def \__init__(self, side_length: int):  # type hinting suggests side_length should be of type int
+- Python has __type hinting__ to hint at what a parameter's type should be. The typing is not actually enforced though. Example: def \__init__(self, side_length: int):  # type hinting suggests side_length should be of type int.
 
 """"""
 
