@@ -86,7 +86,7 @@ class RandomGuesser(AbstractGame):
 
 <u>Sample Input<u>
 
-\>>>games = [RandomGuesser(1), AnotherGame()]  # Will run until AnotherGame() is called. The system will throw an error because reset() and play() are not implemented.
+\>>>games = [RandomGuesser(1), AnotherGame()]  # Will run until AnotherGame() is called. The system will throw an error because reset() and play() are not implemented in AnotherGame().
 
 \>>>for game in games:
 
