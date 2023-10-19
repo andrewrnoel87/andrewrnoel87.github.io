@@ -120,7 +120,7 @@ In Python, there is no formal definition for an __interface__ but we can still r
 
 import math
 
-class ShapeInterface:
+class ShapeInterface:  # The suffix Interface is used to denote an interface. Interface in python is a convention, does not enforce anything.
 
     def get_area(self):
         raise NotImplementedError()
