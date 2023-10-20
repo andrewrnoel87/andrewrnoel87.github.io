@@ -31,4 +31,71 @@ Implementing those methods will sometimes change how certain operators will beha
 
 """"""
 
+# Core Dunder Methods
+
+\__add__(self, other)       # add                               +
+
+\__sub__(self, other)       # subract                           -
+
+\__mul__(self, other)       # multiply                          *
+
+\__truediv__(self, other)   # division                          /
+
+\__floordiv__(self, other)  # integer division                  //
+
+\__len__(self)              # length                            len()
+
+\__eq__(self, other)        # equivalent to                     ==
+
+\__ne__(self, other)        # not equal to                      !=
+
+\__gt__(self, other)        # greater than                      >
+
+\__ge__(self, other)        # greater than or equal to          >=
+
+\__lt__(self, other)        # less than                         <
+
+\__le__(self, other)        #less than or equal to              <=
+
+\__str__(self)              # string method                     str()
+
+\__repr__(self)             # internal representation method    repr()
+
+""""""
+
+# Operator Overloading Example
+
+""""""
+
+class Vector:
+
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+
+    def __eq__(self, vector):
+        if self.a == vector.a and self.b == vector.b:
+            return True
+        return False
+
+    def __repr__(self):
+        return f"Vector({self.a}, {self.b})"
+
+    def __add__(self, vector): 
+        return Vector(self.a + vector.a, self.b + vector.b) 
+
+    def __sub__(self, vector):
+        return Vector(self.a - vector.a, self.b - vector.b)
+
+    def __mul__(self, vector):
+        a_operand = self.a * vector.a
+        b_operand = self.b * vector.b
+        return a_operand + b_operand
+
+""""""
+
+
+
+""""""
+
 [course-site]: https://www.programmingexpert.io/index
