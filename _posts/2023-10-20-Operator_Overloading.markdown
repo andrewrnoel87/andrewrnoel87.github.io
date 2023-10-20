@@ -5,7 +5,7 @@ date:   2023-10-20 13:26:00 -0400
 categories: blog
 ---
 
-Today, I cover __Operator Overloading__ from the [programmingexpert.io][course-site] course.
+Today, I cover __Operator Overloading__ from the [programmingexpert.io][course-site] course. Operator Overloading is our ability to implement custom operations on our own classes.
 
 """"""
 
