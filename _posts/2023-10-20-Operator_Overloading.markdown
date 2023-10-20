@@ -33,33 +33,33 @@ Implementing those methods will sometimes change how certain operators will beha
 
 # Core Dunder Methods
 
-\__add__(self, other)       # add                               +
+\__add__(self, other)       # add                              # __+__
 
-\__sub__(self, other)       # subract                           -
+\__sub__(self, other)       # subract                          # __-__
 
-\__mul__(self, other)       # multiply                          *
+\__mul__(self, other)       # multiply                         # __*__
 
-\__truediv__(self, other)   # division                          /
+\__truediv__(self, other)   # division                         # __/__
 
-\__floordiv__(self, other)  # integer division                  //
+\__floordiv__(self, other)  # integer division                 # __//__
 
-\__len__(self)              # length                            len()
+\__len__(self)              # length                           # __len()__
 
-\__eq__(self, other)        # equivalent to                     ==
+\__eq__(self, other)        # equivalent to                    # __==__
 
-\__ne__(self, other)        # not equal to                      !=
+\__ne__(self, other)        # not equal to                     # __!=__
 
-\__gt__(self, other)        # greater than                      >
+\__gt__(self, other)        # greater than                     # __>__
 
-\__ge__(self, other)        # greater than or equal to          >=
+\__ge__(self, other)        # greater than or equal to         # __>=__
 
-\__lt__(self, other)        # less than                         <
+\__lt__(self, other)        # less than                        # __<__
 
-\__le__(self, other)        #less than or equal to              <=
+\__le__(self, other)        #less than or equal to             # __<=__
 
-\__str__(self)              # string method                     str()
+\__str__(self)              # string method                    # __str()__
 
-\__repr__(self)             # internal representation method    repr()
+\__repr__(self)             # internal representation method   # __repr()__
 
 """"""
 
