@@ -94,6 +94,10 @@ class Vector:
 
 """"""
 
+Because Vector() has overloaded the dunder methods with its own implementation of them, the following code is possible.
+
+""""""
+
 
 
 """"""
