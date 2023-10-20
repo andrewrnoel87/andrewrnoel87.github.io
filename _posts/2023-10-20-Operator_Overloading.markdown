@@ -13,7 +13,7 @@ Today, I cover __Operator Overloading__ from the [programmingexpert.io][course-s
 
 <u>Dunder Method<u>
 
-Dunder comes from double underscore. Dunder methods are methods that are prefixed and suffixed by two underscores. The most important thing to know is the \__init__ dunder method, which is sometimes called the _constructor_ of the class, defines how a new instance is initialized after being created.
+Dunder comes from double underscore. Dunder methods are also know as _magic methods_. Dunder methods are methods that are prefixed and suffixed by two underscores. The most important thing to know is the \__init__ dunder method, which is sometimes called the _constructor_ of the class, defines how a new instance is initialized after being created.
 
 Implementing those methods will sometimes change how certain operators will behave (like + with \__add__ and == with \__eq__). Other examples include \__len__, \__str__, \__repr__ and many more.
 
