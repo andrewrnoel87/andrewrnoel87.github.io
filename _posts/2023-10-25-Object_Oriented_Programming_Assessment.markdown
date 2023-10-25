@@ -12,6 +12,16 @@ Today, I covered the __Object-Oriented Programming Assessment__ from the [progra
 
 """"""
 
+__Inventory Class__
+
+Write an Inventory class, as defined below, that handles the management of inventory for a company. All instances of this class should be initialized by passing an integer value named max_capacity that indicates the maximum number of items that can be stored in inventory. The Inventory class will need to store items that are represented by a _name_, _price_ and _quantity_.
+
+The class should implement the following methods.
+
+- __add_item(name, price, quantity)__: This method should add an item to the inventory and return __True__ if it was successfully added. If adding an item results in the inventory being over apacity your method should return __False__ and omit adding this item to the inventory. Additionally, if an item with the passed _name_ already exists in inventory this method should return __False__ to indicate the item could not be added.
+
+- 
+
 """"""
 
 - My Solution for Exercise One -
