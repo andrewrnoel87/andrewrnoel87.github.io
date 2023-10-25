@@ -94,23 +94,21 @@ class Vector:
 
 """"""
 
-Because Vector() has overloaded the dunder methods with its own implementation of them, the following code is possible.
+Because Vector() has overloaded the dunder methods with its own implementation of them, the following code is possible:
 
-""""""
+    >>> v1 = Vector(3, 4)
 
-v1 = Vector(3, 4)
+    >>> v2 = Vector(2, 7)
 
-v2 = Vector(2, 7)
+    >>> v3 = v1 * v2
 
-v3 = v1 * v2
+    >>> v4 = v1 - v2
 
-v4 = v1 - v2
+    >>> v5 = v1 + v2
 
-v5 = v1 + v2
+    >>> vectors_equal = v1 == v2
 
-is_vector_equal = v1 == v2
-
-vector_string = repr(v1)
+    >>> vector_string = repr(v1)
 
 """"""
 
