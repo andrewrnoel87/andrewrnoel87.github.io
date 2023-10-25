@@ -21,7 +21,7 @@ negative values).
 
 """"""
 
-- My Solution for One -
+- My Solution for Exercise One -
 
 """"""
 
