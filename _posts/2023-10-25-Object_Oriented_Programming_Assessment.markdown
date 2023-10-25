@@ -61,7 +61,7 @@ class Inventory:
 
     def add_item(self, name: str, price: float, quantity: int):
         if (self.item_count + quantity <= self.max_capacity) and (name not in self.items):
-            self.items[name] = {'name': name, 'price': price, 'quantity': quantity}
+            self.items[name] = {'name': name, 'price': price, 'quantity': quantity}  # Creating a nested dictionary to hold our items
             self.item_count += quantity
             return True 
         
@@ -71,7 +71,7 @@ class Inventory:
         if name not in self.items:
             return False
       
-        self.item_count -= self.items[name]['quantity']
+        self.item_count -= self.items[name]['quantity']  # need to update our item_count
         del self.items[name]
         return True
         
@@ -94,8 +94,6 @@ class Inventory:
                 most_stocked_item_qty = self.items[name]['quantity']
 
         return most_stocked_item
-
-""""""
 
 """"""
 
