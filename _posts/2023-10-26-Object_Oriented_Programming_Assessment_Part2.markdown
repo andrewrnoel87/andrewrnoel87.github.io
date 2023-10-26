@@ -184,7 +184,7 @@ class Square(Rectangle):
     def __init__(self, side):
         super().__init__(side, side)
 
-def get_triangle_area(side1, side2, side3):  # Static Method
+def get_triangle_area(side1, side2, side3):
 
     semi_perimeter = (side1 + side2 + side3) / 2
     return math.sqrt(
@@ -194,7 +194,7 @@ def get_triangle_area(side1, side2, side3):  # Static Method
         (semi_perimeter - side3)
     )
 
-def get_rectangle_area(width, height):  # Static Method
+def get_rectangle_area(width, height): 
 
     return width * height
 
