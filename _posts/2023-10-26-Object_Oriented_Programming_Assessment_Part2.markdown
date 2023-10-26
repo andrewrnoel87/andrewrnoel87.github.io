@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Object-Oriented Programming Assessment Part 2"
-date:   2023-10-26 14:28:00 -0400
+date:   2023-10-26 11:06:00 -0400
 categories: blog
 ---
 Today, I covered the __Object-Oriented Programming Assessment__ from the [programmingexpert.io][course-site] course.
@@ -95,6 +95,7 @@ class Student:
 
         return grade_sum / total_num_students
 
+""""""
 """"""
 
 [course-site]: https://www.programmingexpert.io/index
