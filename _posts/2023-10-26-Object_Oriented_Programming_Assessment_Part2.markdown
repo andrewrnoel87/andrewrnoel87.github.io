@@ -142,7 +142,7 @@ See below for an example of how these classes should behave:
 import math
 
 
-class Polygon:
+class Polygon:  # Treat as an abstract class
 
     def get_area(self):
         raise NotImplementedError
