@@ -12,7 +12,7 @@ Today, I covered the __Object-Oriented Programming Assessment__ from the [progra
 
 """"""
 
-__Inventory Class__
+<u>Inventory Class<u>
 
 Write an Inventory class, as defined below, that handles the management of inventory for a company. All instances of this class should be initialized by passing an integer value named max_capacity that indicates the maximum number of items that can be stored in inventory. The Inventory class will need to store items that are represented by a _name_, _price_ and _quantity_.
 
