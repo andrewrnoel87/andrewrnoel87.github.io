@@ -200,4 +200,21 @@ def get_rectangle_area(width, height):  # Static Method
 
 """"""
 
+The following is the instructor's implementation of the Triangle class:
+
+    class Triangle(Polygon):
+        def __init__(self, side1, side2, side3):
+            self.sides = [side1, side2, side3]
+
+        def get_sides(self):
+            return self.sides
+
+        def get_area(self):
+            side1, side2, side3 = self.sides
+            return get_triangle_area(side1, side2, side3)
+
+I wanted to note the way the instructor assigned the variables.
+
+""""""
+
 [course-site]: https://www.programmingexpert.io/index
