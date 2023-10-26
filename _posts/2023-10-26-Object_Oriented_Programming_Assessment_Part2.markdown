@@ -12,7 +12,7 @@ Today, I covered the __Object-Oriented Programming Assessment__ from the [progra
 
 """"""
 
-__Student Class__
+<u>Student Class<u>
 
 Write a Student class, as defined below, that keeps track of all created students.
 
@@ -96,6 +96,47 @@ class Student:
         return grade_sum / total_num_students
 
 """"""
+
+# """Exercise Three"""
+
+""""""
+
+<u>Geometry Inheritance<u>
+
+Create 4 classes: __Polygon__, __Triangle__, __Rectangle__ and __Square__. The _Triangle_ and _Rectangle_ class should be subclasses of _Polygon_, and _Square_ should be a subclass of _Rectangle_.
+
+The __Polygon__ class should raise a __NotImplementedError__ when the __get_area()__ and __get_sides()__ methods are called. However, it should correctly return the perimeter of the polygon when __get_perimeter()__ is called. Treat __Polygon__ class as an abstract class.
+
+The __Triangle__ class should have a constructor that takes in 3 arguments, which will be the lengths of the 3 sides of the triangle. You may assumethe sides passed to the constructor will always form a valid triangle.
+
+The __Rectangle__ class should have a constructor that takes in 2 arguments, which will be the __width__ and __height__ of the __Rectangle__.
+
+The __Square__ class should have a constructor that takes in 1 argument, which will be the length of each side of the __Square__.
+
+The __Triangle__ and __Rectangle__ classes should both implement the following methods: 
+
+- __get_sides()__: This method returns a list containing the lengths of the sides of the shape.
+
+- __get_area()__: This method returns the area of the polygon.
+
+The __Square__ class should only have an implementation for its constructor, and rely on the __Rectangle__ superclass for the implementations of __get_sides()__ and __get_area()__.
+
+Note: To calculate the area of a triangle given three lengths (x, y and z) you can use the following formula. First calculate the semi perimeter s using: s = (x + y + z) / 2. Then calculate the area A using: A = math.sqrt(s * (s - x) * (s - y) * (s - z)).
+
+See below for an example of how these classes should behave:
+
+    >>> triangle = Triangle(2, 5, 6)
+    >>> triangle.get_area()
+    4.68
+    >>> Square(4).get_perimeter()
+    16
+    >>> Rectangle(3, 5).get_sides()
+    [3, 5, 3, 5]
+    
+""""""
+
+# My Solution for Exercise Three -
+
 """"""
 
 [course-site]: https://www.programmingexpert.io/index
