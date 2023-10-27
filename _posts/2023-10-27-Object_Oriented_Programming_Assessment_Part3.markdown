@@ -118,4 +118,28 @@ class Deck:
 
 """"""
 
+# """Exercise Five"""
+
+""""""
+
+<u>FileSystem Implementation<u>
+
+In this question, implement a very simplistic __FileSystem__ works. A __FileSystem__ starts empty with only a root node which will always be a directory.
+
+A __FileSystem__ is a tree-like structure composed of nodes, each of which is either a __File__ or __Directory__.
+
+Files are simplest and only have __name__ and __contents__ as attributes; which correspond to the name of the file and its contents, respectively. Files also have a __write__ method, which sets the contents of that file to the argument passed in. Additionally, files override the \__len__ dunder method which returns the number of characters in the contents of that file.
+
+Directories have a __name__ and a __children__ attribute. __children__ is a dictionary that stores the name of its children nodes as keys, and the nodes themselves as the values of that dictionary. Directories also have the __add__ and __delete__ methods which are used to add or delete nodes from its __children__ dictionary.
+
+For convenience, the \__str__ methods of each class have been overridden so that one may debug the FileSystem more easily.
+
+The task is to implement the following mwthods on the __FileSystem__ class:
+
+- __create_directory(path)__: This method should create a __Directory__ inside the __FileSystem__ at the location specified. For instance, __create_directory("/dir1")__ should create a directory as a child of the root of the filesystem called __"dir1"__. Running __create_directory("/dir1/dir2")__ should create another, __dir2__, inside the one that was just created. If the path is malformed or the operation is impossible, it should raise a __ValueError__.
+
+- 
+
+""""""
+
 [course-site]: https://www.programmingexpert.io/index
