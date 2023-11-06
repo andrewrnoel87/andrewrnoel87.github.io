@@ -147,7 +147,7 @@ class FileSystem:
 
 
     def _find_bottom_node(self, node_names):
-    
+
         current_node = self.root
         for node_name in node_names:
             if not isinstance(current_node, Directory):  # Make sure the current node is a directory
@@ -161,6 +161,7 @@ class FileSystem:
         return current_node
             
 class Node:
+
     def __init__(self, name):
         self.name = name
 
@@ -169,6 +170,7 @@ class Node:
 
 
 class Directory(Node):
+
     def __init__(self, name):
         super().__init__(name)
         self.children = {}
@@ -193,6 +195,7 @@ class Directory(Node):
 
 
 class File(Node):
+
     def __init__(self, name):
         super().__init__(name)
         self.contents = ""
@@ -208,6 +211,7 @@ class File(Node):
 
 
 def indent(string, number_of_spaces):
+
     spaces = " " * number_of_spaces
     lines = string.split("\n")
     indented_lines = [spaces + line for line in lines]
