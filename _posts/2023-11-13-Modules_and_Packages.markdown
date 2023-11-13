@@ -68,7 +68,7 @@ Importing a module and changing the reference to that module:
 
     import module_name as m  # will allow m.function() to work
 
-This is useful if the module name is long or already in use.
+- This is useful if the module name is long or already in use.
 
 
 
