@@ -70,9 +70,19 @@ Importing a module and changing the reference to that module:
 
 - This is useful if the module name is long or already in use.
 
+Multiple imports:
 
+    import module_name as m
+    import module_name  
+    
+    # will allow module_name.function() and m.function() to both work
 
+Import specific objects:
 
+    from module_name import foo, bar
+
+    # will allow foo() and/or bar() to work
+    
 
 
 
