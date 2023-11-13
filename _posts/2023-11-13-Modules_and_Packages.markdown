@@ -52,11 +52,7 @@ A Python __package__ is simply a directory/folder that contains a special file n
 
 - When we specify the direct import path, it is an __absolute import__. Absolute imports are prefered over relative imports.
 
-- __Relative imports__ are based on where you are when you import. Example:
-
-    from . import module_name
-
-    # This says from the current package/directory import module_name
+- __Relative imports__ are based on where you are when you import. Example: __from . import module_name__. This says from the current package/directory import module_name.
 
 """"""
 
