@@ -77,7 +77,7 @@ Examine the following directory structure and file contents:
 
     import a
 
-\# x/a/__init__.py:
+\# x/a/\_\_init\_\_.py:
 
     from .b import foo
 
