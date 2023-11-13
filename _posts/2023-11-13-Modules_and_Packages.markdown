@@ -60,7 +60,7 @@ A Python __package__ is simply a directory/folder that contains a special file n
 
 """"""
 
-# Importing A Function Example
+# Importing Functions Example
 
 """"""
 
@@ -83,7 +83,7 @@ __from a.b.c import foo__
 
 """"""
 
-# Importing A Package, A Module And A Function Example
+# Importing Packages, Modules And Functions Example
 
 """"""
 
