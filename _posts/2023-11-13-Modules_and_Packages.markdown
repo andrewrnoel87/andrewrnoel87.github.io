@@ -61,7 +61,7 @@ __from a.b.c import foo__
 
 """"""
 
-# Importing A Package And A Module Example
+# Importing A Package, A Module And A Function Example
 
 """"""
 
