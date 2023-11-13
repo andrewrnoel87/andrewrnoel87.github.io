@@ -76,7 +76,7 @@ This is useful if the module name is long or already in use.
 
 """"""
 
-# Importing Functions Example
+# Importing Functions Exercise
 
 """"""
 
@@ -99,7 +99,7 @@ __from a.b.c import foo__
 
 """"""
 
-# Importing Packages, Modules And Functions Example
+# Importing Packages, Modules And Functions Exercise
 
 """"""
 
