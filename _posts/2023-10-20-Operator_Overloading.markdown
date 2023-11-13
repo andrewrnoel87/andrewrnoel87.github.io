@@ -55,7 +55,7 @@ Implementing those methods will sometimes change how certain operators will beha
 
 \__lt__(self, other)        # less than                        # __<__
 
-\__le__(self, other)        #less than or equal to             # __<=__
+\__le__(self, other)        # less than or equal to            # __<=__
 
 \__str__(self)              # string method                    # __str()__
 
