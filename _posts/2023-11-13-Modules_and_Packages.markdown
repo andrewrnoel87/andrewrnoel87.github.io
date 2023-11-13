@@ -36,6 +36,12 @@ A Python __package__ is simply a directory/folder that contains a special file n
 
 - Python packages are any directories that contain a __\_\_init\_\_.py__ file, packages may be nested in other packages.
 
+- __print(\_\_name\_\_)__ will print out the name of the module you are in.
+
+- Imported modules will _not_ be named \_\_main\_\_.
+
+- When naming modules it is best practice to use lower case and snake_case. Do not use special characters or spaces. Avoid naming a module the same as a built-in module.
+
 """"""
 
 # Importing A Function Example
