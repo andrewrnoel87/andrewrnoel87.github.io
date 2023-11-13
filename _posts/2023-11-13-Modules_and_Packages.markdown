@@ -60,13 +60,13 @@ A Python __package__ is simply a directory/folder that contains a special file n
 
 """"""
 
-<u>Importing with modules in the same directory<u> -
+Importing with modules in the same directory:
 
-__import module_name__  # will allow module_name.function() to work
+    import module_name  # will allow module_name.function() to work
 
-<u>Importing a module and changing the reference to that module<u> -
+Importing a module and changing the reference to that module:
 
-__import module_name as m__  # will allow m.function() to work
+    import module_name as m  # will allow m.function() to work
 
 This is useful if the module name is long or already in use.
 
