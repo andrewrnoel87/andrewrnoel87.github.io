@@ -35,33 +35,33 @@ Implementing those methods will sometimes change how certain operators will beha
 
 :
 
-    __add__(self, other)       # add                              #  +
+    __add__(self, other)       # add                              ,  +
 
-    __sub__(self, other)       # subract                          #  -
+    __sub__(self, other)       # subract                          ,  -
 
-    __mul__(self, other)       # multiply                         #  *
+    __mul__(self, other)       # multiply                         ,  *
 
-    __truediv__(self, other)   # division                         #  /
+    __truediv__(self, other)   # division                         ,  /
 
-    __floordiv__(self, other)  # integer division                 #  //
+    __floordiv__(self, other)  # integer division                 ,  //
 
-    __len__(self)              # length                           #  len()
+    __len__(self)              # length                           ,  len()
 
-    __eq__(self, other)        # equivalent to                    #  ==
+    __eq__(self, other)        # equivalent to                    ,  ==
 
-    __ne__(self, other)        # not equal to                     #  !=
+    __ne__(self, other)        # not equal to                     ,  !=
 
-    __gt__(self, other)        # greater than                     #  >
+    __gt__(self, other)        # greater than                     ,  >
 
-    __ge__(self, other)        # greater than or equal to         #  >=
+    __ge__(self, other)        # greater than or equal to         ,  >=
 
-    __lt__(self, other)        # less than                        #  <
+    __lt__(self, other)        # less than                        ,  <
 
-    __le__(self, other)        # less than or equal to            #  <=
+    __le__(self, other)        # less than or equal to            ,  <=
 
-    __str__(self)              # string method                    #  str()
+    __str__(self)              # string method                    ,  str()
 
-    __repr__(self)             # internal representation method   #  repr()
+    __repr__(self)             # internal representation method   ,  repr()
 
 """"""
 
