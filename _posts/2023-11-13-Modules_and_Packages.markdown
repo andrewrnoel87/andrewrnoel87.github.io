@@ -42,6 +42,22 @@ A Python __package__ is simply a directory/folder that contains a special file n
 
 - When naming modules it is best practice to use lower case and snake_case. Do not use special characters or spaces. Avoid naming a module the same as a built-in module.
 
+- When you do an __import__, the imported code is ran once.
+
+- By convention, __import__ statements should be located at the top of a file.
+
+- __Avoid__ circular imports.
+
+- __\_\_init\_\_.py__ has code to run when the package is imported.
+
+- When we specify the direct import path, it is an __absolute import__. Absolute imports are prefered over relative imports.
+
+- __Relative imports__ are based on where you are when you import. Example:
+
+    from . import module_name
+
+    # This says from the current package/directory import module_name
+
 """"""
 
 # Importing A Function Example
