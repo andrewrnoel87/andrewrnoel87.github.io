@@ -82,6 +82,12 @@ Import specific objects:
     from module_name import foo, bar
 
     # will allow foo() and/or bar() to work
+
+Import everything:
+
+    from module_or_package import *
+
+    # this is usually bad practice if you do not need everything, but it does import everything from the module or package
     
 
 
