@@ -93,8 +93,9 @@ Import a package if it is in the same directory as the \_\_main\_\_ module:
 
     import package_name
 
+Import a specific module from a package:
 
-
+    import package_name.module_name
 
 """"""
 
