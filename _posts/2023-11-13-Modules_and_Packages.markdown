@@ -52,7 +52,7 @@ A Python __package__ is simply a directory/folder that contains a special file n
 
 - When we specify the direct import path, it is an __absolute import__. Absolute imports are prefered over relative imports.
 
-- __Relative imports__ are based on where you are when you import. Example: __from . import module_name__. This says from the current package/directory import module_name.
+- __Relative imports__ are based on where you are when you import.
 
 """"""
 
@@ -93,9 +93,23 @@ Import a package if it is in the same directory as the \_\_main\_\_ module:
 
     import package_name
 
-Import a specific module from a package:
+Import a specific module from a package without running \_\_init\_\_.py:
 
-    import package_name.module_name
+    import package_name.module_name  # or, import package_name, would allow the next line to work but it would also run __init__.py
+
+    package_name.module_name.function_name()  # will now work
+
+Import a specific function from a module in a package without running \_\_init\_\_.py:
+
+    from package_name.module_name import function_name  # after this import the function can be used directly
+
+    function_name()  
+
+Relative Import:
+
+    from . import module_name 
+    
+    # This says from the current package/directory import module_name.
 
 """"""
 
