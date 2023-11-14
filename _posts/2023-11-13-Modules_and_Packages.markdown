@@ -110,6 +110,7 @@ Relative Import:
     from . import module_name 
     
     # This says from the current package/directory import module_name.
+    # Can have multiple 'dot' operators to go up multiple levels in the directory hierarchy.
 
 """"""
 
