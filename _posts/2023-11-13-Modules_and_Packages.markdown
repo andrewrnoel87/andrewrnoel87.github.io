@@ -89,6 +89,10 @@ Import everything:
 
     # this is usually bad practice if you do not need everything, but it does import everything from the module or package
     
+Import a package if it is in the same directory as the \_\_main\_\_ module:
+
+    import package_name
+
 
 
 
