@@ -93,13 +93,13 @@ Import a package if it is in the same directory as the \_\_main\_\_ module:
 
     import package_name
 
-Import a specific module from a package without running \_\_init\_\_.py:
+Import a specific module from a package:
 
     import package_name.module_name  # or, import package_name, would allow the next line to work but it would also run __init__.py
 
     package_name.module_name.function_name()  # will now work
 
-Import a specific function from a module in a package without running \_\_init\_\_.py:
+Import a specific function from a module in a package:
 
     from package_name.module_name import function_name  # after this import the function can be used directly
 
