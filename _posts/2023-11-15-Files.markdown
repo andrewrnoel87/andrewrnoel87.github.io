@@ -1,0 +1,82 @@
+---
+layout: default
+title:  "Files"
+date:   2023-11-15 17:25:00 -0400
+categories: blog
+---
+
+Today, I cover __Files__ from the [programmingexpert.io][course-site] course.
+
+""""""
+
+# Notes
+
+<u>open(filename, mode)<u>
+
+- "r": Opens a file for reading and places the file cursor at the start of the file.
+
+- "w": Opens a file for writing by creating a new file. This will override existing files and place the file cursor at the start of the new file.
+
+- "a": Opens a file for appending. This opens an existing file and places the file cursor at the end of the file.
+
+- "r+": Opens a file for both writing and reading and places the file cursor at the start of the file.
+
+""""""
+
+# Reading Files Exercise
+
+""""""
+
+Open a filed named __"programmingExpert.txt"__ that is located in the __data__ directory and __print__ how many words are present in the file.
+
+Escape characters like __\n__ and __\t__, periods, commas and dashes (-) are not considered words. Assume that all other text in the file that is separated by a space is a word.
+
+The approach to this one is to replace all the characters that are not words with spaces and empty strings. Then split the string into a list using a space as the delimiter. Next subtract the number of empty strings from the total length of the list to get the final number of words.
+
+Solution:
+
+    text = ""
+
+    with open("data/programmingExpert.txt", "r") as file:
+        text = file.read()
+
+    escape_characters_removed = text.replace("\n", " ").replace("\t", " ")
+
+    punctuation_removed = escape_characters_removed.replace(",", "").replace("-", "").replace(".", "")
+
+    words = punctuation_removed.split(" ")
+    empty_strings = words.count("")
+    number_of_words = len(words) - empty_strings
+
+    print(number_of_words)
+
+""""""
+
+# Writing To Files Exercise
+
+""""""
+
+Within the current directory create a new file named __"programmingExpert.txt"__ that contains the squares of numbers in the range __1__ to __50__, each on new line.
+
+Solution:
+    
+    with open("programmingExpert.txt", "w") as file:
+        for i in range(1,51):
+            square = i * i
+            file.write(str(square) + "\n")
+
+Alternate Solution:
+
+    # Copyright © 2022 AlgoExpert LLC. All rights reserved.
+
+    file = open("programmingExpert.txt", "w")
+
+    for num in range(1, 51):
+        square = num ** 2
+        file.write(str(square) + "\n")
+
+    file.close()    
+
+""""""
+
+[course-site]: https://www.programmingexpert.io/index
