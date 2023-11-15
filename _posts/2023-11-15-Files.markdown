@@ -31,7 +31,7 @@ Open a filed named __"programmingExpert.txt"__ that is located in the __data__ d
 
 Escape characters like __\n__ and __\t__, periods, commas and dashes (-) are not considered words. Assume that all other text in the file that is separated by a space is a word.
 
-The approach to this one is to replace all the characters that are not words with spaces and empty strings. Then split the string into a list using a space as the delimiter. Next subtract the number of empty strings from the total length of the list to get the final number of words.
+- The approach to this one is to replace all the characters that are not words with spaces and empty strings. Then split the string into a list using a space as the delimiter. Next subtract the number of empty strings from the total length of the list to get the final number of words.
 
 Solution:
 
