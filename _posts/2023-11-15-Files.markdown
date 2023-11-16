@@ -19,9 +19,11 @@ Today, I cover __Files__ from the [programmingexpert.io][course-site] course.
 
 - string.__strip()__ removes the white spaces characters from the ends of the string.
 
-- file.__replace("\n", "")__ is great for removing the new line characters from a string.
+- file.__replace("\n", " ")__ is great for removing the new line characters from a string.
 
 - file.__seek(0)__ puts the cursor at the _beginning_ of the file, file.__seek(1)__ puts the cursor at the _current_ reference point and file.__seek(2)__ puts the cursor at the _end_ of the file. These can be useful when writing to a file.
+
+- Looping through the lines of text can be useful.
 
 <u>open(filename, mode)<u>
 
