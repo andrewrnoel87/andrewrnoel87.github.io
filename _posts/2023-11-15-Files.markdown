@@ -13,6 +13,8 @@ Today, I cover __Files__ from the [programmingexpert.io][course-site] course.
 
 - If a file is in the same directory as the \_\_main\_\_ module, it can be accessed via its name. If it is not in the same directory you need to supply the path.
 
+- If you __open(filename, mode)__ a file do not forget to file.__close()__ it. Using the "context manager" __with__ will close the file for you after the "with" block has ran.
+
 - After opening a file, __file.read()__ returns the file as a string of text. An integer can be passed to .read(n) to get the first n characters of the file.
 
 - After opening a file, __file.readlines()__ returns a list with each element being a line of the file as a string.
