@@ -72,4 +72,27 @@ If we break down the code after the __\*__ and __\*\*__ are applied we get the f
 
 """"""
 
+Write a function named __get_args_and_kwargs__ that accepts an unlimited number of positional and keyword arguments. The function should return __True__ if there are at least __4__ total arguments and if the keyword argument __num__ exists, is a number and is larger than __5__. Otherwise, it should return __False__.
+
+The function should handle any errors that may occur.
+
+Sample Output:
+
+     1 | >>> get_args_and_kwargs("a", [2], 3, num=4)
+     2 | False
+     3 | >>> get_args_and_kwargs("a", [2], 3, num=6)
+     4 | True
+     5 | >>> get_args_and_kwargs("a", [2], num=6, x=True)
+     6 | True
+     7 | >>> get_args_and_kwargs(2, 3, a=1, b=2, num="6")
+     8 | False
+     9 | >>> get_args_and_kwargs(2, 3, a=1, b=2, number=7)
+    10 | False
+
+Solution:
+
+    
+
+""""""
+
 [course-site]: https://www.programmingexpert.io/index
