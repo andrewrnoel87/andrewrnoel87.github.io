@@ -24,4 +24,52 @@ Remember that __args__ will be a tuple containing all postional arguments that w
 
 """"""
 
+# Notes
+
+""""""
+
+# Exercise One
+
+""""""
+
+What does the following code print?:
+
+    1 | print(*"hello")
+
+<u>Answer<u>
+
+- h e l l o
+
+<u>Explanation<u>
+
+This is the case because the __*__ operator unpacks an iterable object (in this case a string) into it's individual elements and passes the elements as positional arguments to the function. Since the __print__ function takes any number of positional arguments and prints them seperated by spaces we get __h e l l o__.
+
+""""""
+
+# Exercise Two
+
+""""""
+
+What does the following code print?:
+
+    1 | print(*[1, 2, 3, 4], **{'end': "|", 'sep': "*"})
+
+<u>Answer<u>
+
+- 1*2*3*4|
+
+<u>Explanation<u>
+
+The __*__ operator unpacks an iterable object (in this case a list) into it's individual elements and passes the elements as positional arguments to a function. This means the print function gets passed __1__, __2__, __3__ and __4__ as positional arguments.
+
+The __\*\*__ operator unpacks items from a dictionary into keyword arguments that are passed to a function. This means the __print__ function gets passed __end="|"__ and __sep="*"__ as keyword arguments. The __sep__ keyword argument defines the seperator between individual items, by default it is a space. The __end__ keyword argument defines the last character to be printed, by default it is a __\n__.
+
+If we break down the code after the __\*__ and __\*\*__ are applied we get the following: __print(1, 2, 3, 4, end="|", sep="\*")__. This results in __1*2*3*4|__ being printed.
+
+""""""
+
+# Exercise Three
+
+""""""
+
 [course-site]: https://www.programmingexpert.io/index
