@@ -91,7 +91,26 @@ Sample Output:
 
 Solution:
 
-    
+    def get_args_and_kwargs(*args, **kwargs):
+    number_of_args = len(args) + len(kwargs)
+    if number_of_args >= 4:
+        if "num" in kwargs.keys():
+            if kwargs["num"] > 5:
+                return True
+    return False
+
+Instructor Solution:
+
+    # Copyright © 2022 AlgoExpert LLC. All rights reserved.
+
+    def get_args_and_kwargs(*args, **kwargs):
+        number_of_args = len(args) + len(kwargs)
+        num = kwargs.get("num", 0)
+
+        if not isinstance(num, int) and not isinstance(num, float):
+            return False
+
+        return number_of_args >= 4 and num > 5
 
 """"""
 
