@@ -50,6 +50,8 @@ Solution:
 
 - Common methods used with dictionaries are __.values()__, __.keys()__, __.items()__ and __.get()__. The 'in' operator and the len() function are commonly used as well.
 
+- __.get(key, default_value)__ gets the the value of the key and if the key doesn't exist, it creates it and sets it value to default_value.
+
 """"""
 
 # Dictionary Exercise
