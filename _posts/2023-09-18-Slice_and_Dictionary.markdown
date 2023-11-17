@@ -48,7 +48,7 @@ Solution:
 
 - A __Dictionary__ is an unordered collection of __key:value__ pairs. The key is immutable. When concerned with presence or frequency of items in a collection but do not care about the order, use a dictionary due to its speed benefits. 
 
-- Common methods used with dictionaries are .values(), .keys(), .items() and .get(). The 'in' operator and the len() function are commonly used as well.
+- Common methods used with dictionaries are __.values()__, __.keys()__, __.items()__ and __.get()__. The 'in' operator and the len() function are commonly used as well.
 
 """"""
 
