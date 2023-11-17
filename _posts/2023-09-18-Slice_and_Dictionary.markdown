@@ -30,21 +30,14 @@ Modify the w, x, y, and z variables such that the program outputs [8, 6, 4].
 Solution:
 
     w = 2  # <- Changed this to 2
-
     x = 2 # <- Changed this to 2
-
     y = 7  # <- Changed this to 7
-
     z = -1  # <- Changed this to -1
 
     lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
     first_slice = lst[::z]  # first reverse the list
-
     second_slice = first_slice[:y]  # pick a stop point that cuts off the elements smaller than 4
-
     third_slice = second_slice[x:]  # pick a start point that cuts off the elements greater than 8
-
     last_slice = third_slice[::w]  # pick every other element in the list
 
     print(last_slice)
