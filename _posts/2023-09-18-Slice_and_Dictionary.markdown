@@ -21,7 +21,7 @@ __collection[start:stop:step]__.
 
 """"""
 
-# The Slice Exercise
+# Slice Exercise
 
 """"""
 
@@ -46,13 +46,13 @@ Solution:
 
 # Dictionary Notes
 
-- A Dictionary is an unordered collection of key:value pairs. The key is immutable. When concerned with presence or frequency of items in a collection but do not care about the order, use a dictionary due to its speed benefits. 
+- A __Dictionary__ is an unordered collection of __key:value__ pairs. The key is immutable. When concerned with presence or frequency of items in a collection but do not care about the order, use a dictionary due to its speed benefits. 
 
 - Common methods used with dictionaries are .values(), .keys(), .items() and .get(). The 'in' operator and the len() function are commonly used as well.
 
 """"""
 
-# The Dictionary Exercise
+# Dictionary Exercise
 
 """"""
 
@@ -77,17 +77,13 @@ Alternate Solution Provided:
     character_frequencies = {}
 
     for character in string:
-
         if character not in character_frequencies:
-
             character_frequencies[character] = 0
 
         character_frequencies[character] += 1
 
     for key in character_frequencies:
-
         frequency = character_frequencies[key]
-
         print(f"{key}: {frequency}")
 
 This solution does not use the .get() method.
