@@ -92,12 +92,12 @@ Sample Output:
 Solution:
 
     def get_args_and_kwargs(*args, **kwargs):
-    number_of_args = len(args) + len(kwargs)
-    if number_of_args >= 4:
-        if "num" in kwargs.keys():
-            if kwargs["num"] > 5:
-                return True
-    return False
+        number_of_args = len(args) + len(kwargs)
+        if number_of_args >= 4:
+            if "num" in kwargs.keys():
+                if kwargs["num"] > 5:
+                    return True
+        return False
 
 Instructor Solution:
 
