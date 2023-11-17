@@ -11,30 +11,35 @@ Today I covered __Slices__, and __Dictionaries__ from the [programmingexpert.io]
 Slices provide a new subset of a collection(i.e., list, string, tuple, etc.). Slices use the following format... 
 collection[start:stop:step]. Negative indexing can be used and the stop point is not included. [:] will make a copy of the collection and [::-1] is a shortcut for reversing the collection.
 
-"""The Slice Exercise"""
+""""""
+
+# The Slice Exercise
+
+""""""
 
 Modify the w, x, y, and z variables such that the program outputs [8, 6, 4].
 
-""""""
-w = 2  # <- Had to change this
+Solution:
 
-x = 2 # <- Had to change this
+    w = 2  # <- Changed this to 2
 
-y = 7  # <- Had to change this
+    x = 2 # <- Changed this to 2
 
-z = -1  # <- Had to change this
+    y = 7  # <- Changed this to 7
 
-lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    z = -1  # <- Changed this to -1
 
-first_slice = lst[::z]  # first reverse the list
+    lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-second_slice = first_slice[:y]  # pick a stop point that cuts off the elements smaller than 4
+    first_slice = lst[::z]  # first reverse the list
 
-third_slice = second_slice[x:]  # pick a start point that cuts off the elements greater than 8
+    second_slice = first_slice[:y]  # pick a stop point that cuts off the elements smaller than 4
 
-last_slice = third_slice[::w]  # pick every other element in the list
+    third_slice = second_slice[x:]  # pick a start point that cuts off the elements greater than 8
 
-print(last_slice)
+    last_slice = third_slice[::w]  # pick every other element in the list
+
+    print(last_slice)
 
 """"""
 
