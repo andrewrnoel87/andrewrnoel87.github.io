@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Time for a Slice and a Dictionary"
+title:  "Slice and Dictionary"
 date:   2023-09-18 13:03:00 -0400
 categories: blog
 ---
@@ -8,8 +8,16 @@ Today I covered __Slices__, and __Dictionaries__ from the [programmingexpert.io]
 
 """"""
 
-Slices provide a new subset of a collection(i.e., list, string, tuple, etc.). Slices use the following format... 
-collection[start:stop:step]. Negative indexing can be used and the stop point is not included. [:] will make a copy of the collection and [::-1] is a shortcut for reversing the collection.
+# Slice Notes
+
+- Slices provide a new subset of a collection(i.e., list, string, tuple, etc.). Slices use the following format... 
+__collection[start:stop:step]__. 
+
+- __Negative indexing__ can be used and the stop point is not included. 
+
+- __[:]__ will make a _copy_ of the collection.
+
+- __[::-1]__ is a shortcut for _reversing_ the collection.
 
 """"""
 
@@ -43,11 +51,11 @@ Solution:
 
 """"""
 
-# Notes
+# Dictionary Notes
 
-A Dictionary is an unordered collection of key:value pairs. The key is immutable. When concerned with presence or frequency of items in a collection but do not care about the order, use a dictionary due to its speed benefits. 
+- A Dictionary is an unordered collection of key:value pairs. The key is immutable. When concerned with presence or frequency of items in a collection but do not care about the order, use a dictionary due to its speed benefits. 
 
-Common methods used with dictionaries are .values(), .keys(), .items() and .get(). The 'in' operator and the len() function are commonly used as well.
+- Common methods used with dictionaries are .values(), .keys(), .items() and .get(). The 'in' operator and the len() function are commonly used as well.
 
 """"""
 
