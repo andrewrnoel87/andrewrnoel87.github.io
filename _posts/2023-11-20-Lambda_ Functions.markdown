@@ -31,6 +31,8 @@ A __lambda__ is an anonymous function that can be defined in-line without the us
 
 # Notes
 
+- The main use case for __lambda__ is defining a function where it is going to be used.
+
 - In Python, __lambda__ functions can have any number of arguments. 
 
 Here is an example of a __lambda__ function with multiple parameters:
@@ -50,6 +52,28 @@ Here is an example of calling a __lambda__ function using a keyword argument:
     func = lambda x, y: x + y + 5
     func(y=1, x=1)  # this will return 7
 
+- Using a __lambda__ to return a __lambda__ is a form of __nested__ functions.
+
+Example:
+
+    mul = lambda x: lambda y: x * y
+    result = mul(2)  #  Lambda y: 2 * y, is assigned to result here
+    print(result(4))  #  8, is printed
+
+Similar to:
+
+    def mul(x):
+        def mul2(y):
+            return x * y
+        return mul2
+
+    result = mul(2)  #  2 * y, is assigned
+    print(result(4))  #  8
+
+    # chained calls can also be used
+
+    result = mul(2)(4)
+    print(result)  #  8, is printed
 """"""
 
 # Exercise One
