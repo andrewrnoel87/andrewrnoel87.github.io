@@ -35,7 +35,7 @@ Remember that __args__ will be a tuple containing all postional arguments that w
 Example:
 
     def test(p1, *args, **kwargs):
-        print(p1, args, kwargs, end="\n")
+        print(p1, args, kwargs, sep="\n")
 
     values = [1, 2, 3, 4, 5, 6]
     kwargs = {'s': 1, 'hello': 4, 'k': True}
