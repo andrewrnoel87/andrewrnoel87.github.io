@@ -74,6 +74,7 @@ Similar to:
 
     result = mul(2)(4)
     print(result)  #  8, is printed
+
 """"""
 
 # Exercise One
