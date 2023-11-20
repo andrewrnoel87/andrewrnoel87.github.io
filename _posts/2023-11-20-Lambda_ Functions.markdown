@@ -56,6 +56,10 @@ Here is an example of calling a lambda function using a keyword argument:
 
 """"""
 
+In Python, what expression would result in __ab\|__ being printed to the screen?:
+
+    1 | a = lambda y: lambda x: lambda z: print(x + y, end=z)
+
 <u>Answer<u>
 
 __a("b")("a")("\|")__
