@@ -44,7 +44,7 @@ Here is an example of calling a lambda function using a keyword argument:
 
 <u>Answer<u>
 
-__a("b")("a")("|")__
+__a("b")("a")("\|")__
 
 <u>Explanation<u>
 
