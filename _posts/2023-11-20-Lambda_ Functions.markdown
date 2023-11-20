@@ -43,9 +43,9 @@ Here is an example of a __lambda__ with an optional parameter:
 
     lambda x, y=1: x + y + 5
 
-- In Python, lambda functions can accept positional arguments. 
+- In Python, __lambda__ functions can accept positional arguments. 
 
-Here is an example of calling a lambda function using a keyword argument:
+Here is an example of calling a __lambda__ function using a keyword argument:
 
     func = lambda x, y: x + y + 5
     func(y=1, x=1)  # this will return 7
