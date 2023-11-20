@@ -78,6 +78,23 @@ __a__ holds a complicated __lambda__ function because it returns a __lambda__ th
 
 """"""
 
+Write the following __lambda__ functions.
+
+- A __lambda__ function that takes three integer of float parameters and returns their sum. You should store this __lambda__ function in the variable __add_values__.
+
+- A __lambda__ function that takes two string parameters and returns the maximum of their lengths. You should store this __lambda__ function in the variable __max_length__.
+
+- a __lambda__ function that takes two list parameters and returns a set containing the elements from both lists. You should store this __lambda__ function in the variable __create_set__.
+
+Sample Output:
+
+    1 | >>> add_values(3, 4, 5)
+    2 | 12
+    3 | >>> max_length("hello", "tim")
+    4 | 5
+    5 | >>> create_set([1, 2, 3, 4], [2, 3, 5])
+    6 | {1, 2, 3, 4, 5}
+
 """"""
 
 [course-site]: https://www.programmingexpert.io/index
