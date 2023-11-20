@@ -52,7 +52,7 @@ __a__ holds a complicated __lambda__ function because it returns a __lambda__ th
 
 - When we call __a("b")__ a __lambda__ that looks like the following is returned __lambda x: lambda z: print(x + "b", end=z)__.
 - When we call __a("b")("a")__ a __lambda__ that looks like the following is returned __lambda z: print("a" + "b", end=z)__.
-- When we call __a("b")("a")("|")__ we execute the print statement with __y = "b"__, __x = "a"__ and __z = "|"__.
+- When we call __a("b")("a")("\|")__ we execute the print statement with __y = "b"__, __x = "a"__ and __z = "\|"__.
 
 """"""
 
