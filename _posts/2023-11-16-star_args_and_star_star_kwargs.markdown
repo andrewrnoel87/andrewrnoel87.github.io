@@ -26,6 +26,21 @@ Remember that __args__ will be a tuple containing all postional arguments that w
 
 # Notes
 
+- __*__ can unpack/splat an iterable object into a tuple. ie. [1, 2] --> (1, 2)
+
+- __**__ can unpack/splat a dictionary into a keyword argument pair. ie. {'a': 1} --> a=1
+
+- __*args__ and __**kwargs__ can be used as arguments and/or parameters.
+
+Example:
+
+    def test(p1, *args, **kwargs):
+        print(p1, args, kwargs, end="\n")
+
+    values = [1, 2, 3, 4, 5, 6]
+    kwargs = {'s': 1, 'hello': 4, 'k': True}
+    test(4, *values, **kwargs)
+
 """"""
 
 # Exercise One
