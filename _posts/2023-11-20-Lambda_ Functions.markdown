@@ -13,6 +13,20 @@ Today, I cover __Lambda Functions__ from the [programmingexpert.io][course-site]
 
 <u>Lambda<u>
 
+A __lambda__ is an anonymous function that can be defined in-line without the use of the __def__ keyword. This is extremely useful when defining a custom sort ordering for a collection. Example:
+
+     1 | # Here we have a list of tuples,
+     2 | # each representing a food and its price.
+     3 | lst = [
+     4 |    ('cake', '30'),
+     5 |    ('orange', '3'),
+     6 |    ('pasta', '20')
+     7 | ]
+     8 |
+     9 | # This lambda function lets us sort
+    10 | # by the price of the items.
+    11 | lst.sort(key=lambda x:x[1]) 
+
 """"""
 
 # Notes
