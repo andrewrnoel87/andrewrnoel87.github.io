@@ -95,6 +95,12 @@ Sample Output:
     5 | >>> create_set([1, 2, 3, 4], [2, 3, 5])
     6 | {1, 2, 3, 4, 5}
 
+Solution:
+
+    add_values = lambda x, y, z: x + y + z
+    max_length = lambda x, y: max(len(x), len(y))
+    create_set = lambda x, y: set(x) | set(y)
+
 """"""
 
 [course-site]: https://www.programmingexpert.io/index
