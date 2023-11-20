@@ -17,9 +17,24 @@ Today, I cover __Lambda Functions__ from the [programmingexpert.io][course-site]
 
 # Notes
 
-- In Python, __lambda__ functions can have any number of arguments. Here is an example of a __lambda__ function with multiple parameters:
+- In Python, __lambda__ functions can have any number of arguments. 
+
+Here is an example of a __lambda__ function with multiple parameters:
 
     lambda x, y: x + y + 5
+
+- In Python, __lambda__ functions can have optional parameters. 
+
+Here is an example of a __lambda__ with an optional parameter:
+
+    lambda x, y=1: x + y + 5
+
+- In Python, lambda functions can accept positional arguments. 
+
+Here is an example of calling a lambda function using a keyword argument:
+
+    func = lambda x, y: x + y + 5
+    func(y=1, x=1)  # this will return 7
 
 """"""
 
