@@ -53,7 +53,9 @@ The __map__ function takes two arguments, a function and an iterable object. In 
 
 What does the following code print?:
 
-    1 | pass
+    1 | lst = [[2, 3, 4], [4, 5, 6], [1, 1, 1], [0, 0], [-5, -7]]
+    2 | x = filter(lambda a: abs(sum(a)) > 10, lst)
+    3 | print(list(x))
 
 <u>Answer<u>
 
@@ -61,9 +63,9 @@ What does the following code print?:
 
 <u>Explanation<u>
 
-The filter function works similarily to the map function and accepts as arguments a function and an iterable. In this case the function we passed was lambda a: abs(sum(a)) > 10 and the iterable was lst. The filter function then generates a new iterable object that contains only the elements that when passed to the function returned True.
+The __filter__ function works similarily to the __map__ function and accepts as arguments a function and an iterable. In this case the function we passed was __lambda a: abs(sum(a)) > 10__ and the iterable was __lst__. The __filter__ function then generates a new iterable object that contains only the elements that when passed to the function returned __True__.
 
-To determine what elements will be in the iterable returned by the filter function we need to first understand what the passed function does. In this example the function we passed will take the absolute value of the sum of the element passed (which will be a list of numbers) and determine if it is greater than 10. The only elements in our list where the function returns True are [4, 5, 6] and [-5, -7].
+To determine what elements will be in the iterable returned by the __filter__ function we need to first understand what the passed function does. In this example the function we passed will take the absolute value of the sum of the element passed (which will be a list of numbers) and determine if it is greater than __10__. The only elements in our list where the function returns __True__ are __[4, 5, 6]__ and __[-5, -7]__.
 
 """"""
 
@@ -71,7 +73,9 @@ To determine what elements will be in the iterable returned by the filter functi
 
 """"""
 
-pass
+Use the __map__ and __filter__ functions to create an iterable that contains the even squares of all elements in the __lst__ list. Once you've created this iterable print out all of its values on separate lines.
+
+Use __lambda__'s for any functions you create.
 
 Sample Output:
 
