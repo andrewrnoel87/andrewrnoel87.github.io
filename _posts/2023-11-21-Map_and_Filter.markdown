@@ -13,17 +13,17 @@ Today, I cover __Map and Filter__ from the [programmingexpert.io][course-site] c
 
 <u>Map<u>
 
-pass
+__map(func, *iterables)__ makes an iterator that computes the function using arguments from each of the iterables. It stops when the shortest iterable is exhausted. In other words, __map__ applies a function to each element in an iterable object.
 
 <u>Filter<u>
 
-pass
+__filter(function or None, iterable)__ returns an iterator yielding those items of iterable for which function(item) is true. If function is None, return the items that are true. In other words, __filter__ applies a specific constraint to each element in an iterable object and returns the elements that returned True.
 
 """"""
 
 # Notes
 
-- pass
+- We can loop through iterable objects.
 
 """"""
 
