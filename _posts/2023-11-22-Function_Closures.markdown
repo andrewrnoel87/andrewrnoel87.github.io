@@ -29,7 +29,7 @@ A __free variable__ is a variable __not local__ to the scope of an inner functio
 
 - A closure could replace a class.
 
-Closure Example of count():
+Closure Example of counter():
 
     def counter(start):
         count = start
@@ -44,17 +44,17 @@ Closure Example of count():
     count = counter(2)
     print(count(1))
 
-Class Example of count():
+Class Example of Counter():
 
     class Counter:
         def __init__(self, start):
             self.count = start
-        def count(self, value):
+        def count_increment(self, value):
             self.count += value
             return self.count
 
-    print(count(2))
-    print(count(1))
+    count = Counter(2)
+    print(count.count_increment(1))
 
 """"""
 
