@@ -11,15 +11,50 @@ Today, I cover __Function Closures__ from the [programmingexpert.io][course-site
 
 # Key Terms
 
-<u>Function Closure<u>
+<u>Closures<u>
 
-pass
+A __closure__ is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an __outer function__'s scope from an __inner function__.
+
+<u>Free Variable<u>
+
+A __free variable__ is a variable __not local__ to the scope of an inner function.
 
 """"""
 
 # Notes
 
-- pass
+- Functions are objects.
+
+- Closures are a form of nested functions.
+
+- A closure could replace a class.
+
+Closure Example of count():
+
+    def counter(start):
+        count = start
+
+        def increment(value):
+            nonlocal count
+            count += value
+            return count
+
+        return increment
+
+    count = counter(2)
+    print(count(1))
+
+Class Example of count():
+
+    class Counter:
+        def __init__(self, start):
+            self.count = start
+        def count(self, value):
+            self.count += value
+            return self.count
+
+    print(count(2))
+    print(count(1))
 
 """"""
 
