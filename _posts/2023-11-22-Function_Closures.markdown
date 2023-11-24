@@ -66,7 +66,7 @@ What does the following code print?:
 
 <u>Answer<u>
 
-- :
+\>:
 
     __3__
     __3__
