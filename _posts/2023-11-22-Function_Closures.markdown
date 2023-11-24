@@ -90,15 +90,28 @@ What does the following code print?:
 
 What does the following code print?:
 
-    1 | pass
+     1 | def foo(x, y):
+     2 |    def bar():
+     3 |        nonlocal y
+     4 |        x = 3
+     5 |        y *= 5
+     6 |
+     7 |    bar()
+     8 |    return x, y
+     9 |
+    10 | print(foo(4, 5))
 
 <u>Answer<u>
 
-- pass
+- __(4, 25)__
 
 <u>Explanation<u>
 
-pass
+1. When __foo(4, 5)__ is called __x = 4__ and __y = 5__ and the body of __foo__ is executed.
+2. The __bar__ function is then called from inside of __foo__ and declares __nonlocal y__. Now __y__ will be referenced and modified from the outer scope.
+3. The first line of the __bar__ function is __x = 3__ which declares a new local variable in the __bar__ scope. This does not modify the parameter __x__ from the outer scope.
+4. Next, __y__ is multiplied by __5__ which does modify the value of the parameter __y__ from the outer scope. This is because __y__ was declared as __nonlocal__.
+5. The __bar__ function then terminates and when __x__ and __y__ are returned from the __foo__ function their values are __4__ and __25__ respectively.
 
 """"""
 
