@@ -37,9 +37,7 @@ What does the following code print?:
     6 |
     7 | a("b")("a")
 
-<u>Answer<u>
-
-\>:
+<u>Answer<u>:
 
     a
 
@@ -66,9 +64,7 @@ What does the following code print?:
      9 |
     10 | foo(3)()
 
-<u>Answer<u>
-
-\>:
+<u>Answer<u>:
 
     3
     3
@@ -103,9 +99,7 @@ What does the following code print?:
      9 |
     10 | print(foo(4, 5))
 
-<u>Answer<u>
-
-\>:
+<u>Answer<u>:
 
     (4, 25)
 
