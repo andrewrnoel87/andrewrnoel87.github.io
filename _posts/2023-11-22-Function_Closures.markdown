@@ -68,8 +68,8 @@ What does the following code print?:
 
 \>:
 
-    __3__
-    __3__
+    3
+    3
 
 <u>Explanation<u>
 
