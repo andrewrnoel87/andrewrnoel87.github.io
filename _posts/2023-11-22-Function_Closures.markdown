@@ -39,7 +39,9 @@ What does the following code print?:
 
 <u>Answer<u>
 
-- __a__
+\>:
+
+    a
 
 <u>Explanation<u>
 
@@ -103,7 +105,9 @@ What does the following code print?:
 
 <u>Answer<u>
 
-- __(4, 25)__
+\>:
+
+    (4, 25)
 
 <u>Explanation<u>
 
