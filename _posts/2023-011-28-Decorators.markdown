@@ -61,6 +61,8 @@ Here is an example of a function that uses multiple decorators:
     2 | @log_output
     3 | def func():
     4 |     ...
+    5 |
+    6 | # This is the same as making this call... timer(log_output(func()))
 
 """"""
 
