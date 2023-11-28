@@ -51,7 +51,7 @@ Timer Decorator Example:
 
 - The __purpose__ of a decorator is to enforce some type of behaviour or to do something before or after a function is called. 
 
-- Make sure the decorator will work for any function passed to it. This often involves the use of *args, **kwargs and returning the result of the function passed to the decorator.
+- Make sure the decorator will work for any function passed to it. This often involves the use of __*args__, __**kwargs__ and __returning the result__ of the function passed to the decorator.
 
 - When using multiple decorators the modifications of the second decorator (one furthest to the function) will be applied to the modifications of the first decorator (one closest to the function). 
 
