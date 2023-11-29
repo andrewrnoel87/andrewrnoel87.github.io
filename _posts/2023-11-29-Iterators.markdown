@@ -25,13 +25,13 @@ An __iterator__ is a special kind of object that implements a single function: _
 
 - __iter(object)__ retrieves the iterator for an iterable object.
 
-- The __next()__ method is used on an iterator to get the next item.
+- The __next()__ function is used on an iterator to get the next item.
 
 - __iter(x)__ is the same as __x.\_\_iter\_\_()__.
 
 - __next(x_iter)__ is the same as __x_iter.\_\_next\_\_()__.
 
-- An iterator raises the __StopIteration__ excpetion when it runs out of elements. This exception is raised from the iterators __\_\_next\_\___ method.
+- An iterator raises the __StopIteration__ excpetion when it runs out of elements. This exception is raised from the iterators __\_\_next\_\_()__ method.
 
 Iterator Example:
 
@@ -96,7 +96,7 @@ __t__
 
 <u>Explanation<u>
 
-This is because the __iter__ function and the __\_\_iter\_\___ method return new iterator objects. This means __string_itr__ is a different iterator than __string.\_\_iter\_\_()__.
+This is because the __iter()__ function and the __.\_\_iter\_\_()__ method return new iterator objects. This means __string_itr__ is a different iterator than __string.\_\_iter\_\_()__.
 
 Since these are different objects when we call __next(string_itr)__ it advances that iterator to the next element which is __t__. That means when we continue looping through __string_itr__ in the for loop we start at element __t__ and immediately print it.
 
