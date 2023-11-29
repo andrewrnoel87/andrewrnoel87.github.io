@@ -19,7 +19,59 @@ An __iterator__ is a special kind of object that implements a single function: _
 
 # Notes
 
+- Iterators allow us to loop through iterable objects.
+
+- The iterator object is different than the original object.
+
+- __iter(object)__ retrieves the iterator for an iterable object.
+
+- The __next()__ method is used on an iterator to get the next item.
+
+- __iter(x)__ is the same as __x.\_\_iter\_\_()__.
+
+- __next(x_iter)__ is the same as __x_iter.\_\_next\_\_()__.
+
 - An iterator raises the __StopIteration__ excpetion when it runs out of elements. This exception is raised from the iterators __\_\_next\_\_()__ method.
+
+Iterator Example:
+
+    class Numbers:
+        def __init__(self, num1, num2, num3):
+            self.num1 = num1
+            self.num2 = num2
+            self.num3 = num3
+
+        def __iter__(self):
+            return NumberIterator(self.num1, self.num2, self.num3)
+
+    class NumberIterator:
+        def __init__(self, one, two, three):
+            self.one = one
+            self.two = two
+            self.three = three
+            self.current = 0
+
+        def __next__(self):
+            self.current += 1
+            if self.current == 1:
+                return self.one
+            elif self.current == 2:
+                return self.two
+            elif self.current == 3:
+                return self.three
+            else:
+                raise StopIteration
+
+    nums = Numbers(1, 2, 3)
+    itr = iter(nums)
+    print(itr)
+    print(next(itr))  #  1
+    print(next(itr))  #  2
+    print(next(itr))  #  3
+    print(next(itr))  #  StopIteration exception
+
+    for num in nums:  #  Works because our NumberIterator has the __next__ method and Numbers has __iter__
+        print(num)
 
 """"""
 
