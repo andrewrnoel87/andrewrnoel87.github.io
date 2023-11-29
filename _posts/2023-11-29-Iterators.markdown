@@ -31,7 +31,7 @@ An __iterator__ is a special kind of object that implements a single function: _
 
 - __next(x_iter)__ is the same as __x_iter.\_\_next\_\_()__.
 
-- An iterator raises the __StopIteration__ excpetion when it runs out of elements. This exception is raised from the iterators __\_\_next\_\_()__ method.
+- An iterator raises the __StopIteration__ excpetion when it runs out of elements. This exception is raised from the iterators __\_\_next\_\___ method.
 
 Iterator Example:
 
