@@ -27,7 +27,11 @@ A __generator__ is a special kind of __iterator__ that uses the __yield__ keywor
 
 - The __yield__ keyword creates a generator object.
 
-- 
+- Use a generator when you want to generate an infinite, or close to it, sequence, and you want to access these numbers one at a time.
+
+- One advantage of a __list__ is having access to everything in the list at once.
+
+- Generators access one element at a time.
 
 Generator Example:
 
