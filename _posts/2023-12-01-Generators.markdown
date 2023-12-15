@@ -21,9 +21,31 @@ A __generator__ is a special kind of __iterator__ that uses the __yield__ keywor
 
 - In Python, the presence of the __yield__ keyword in a function makes that function a generator.
 
+- Many iterators can be done with a generator.
+
+- The __yield__ keyword is similar to the __return__ keyword. __yield__ will pause the execution of a function. __return__ ends the function.
+
+- The __yield__ keyword creates a generator object.
+
+- 
+
 Generator Example:
 
-    
+    def fib(n):
+        last = 1
+        second_last = 1
+        current = 3
+
+        while current <= n:
+            num = last + second_last
+            yield num  #  creates the generator object
+
+            second_last = last
+            last = num
+            current += 1
+
+    for val in fib(10):
+        print(val)
 
 """"""
 
