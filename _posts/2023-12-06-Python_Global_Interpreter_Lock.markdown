@@ -24,11 +24,11 @@ A __mutex__ is a __mutually exclusive lock__ that controls the access to a secti
 
 - In many other programming languages, the interpreter can be used by multiple threads at once, a.k.a. in parallel.
 
-- Python threads can run concurrently.
+- Python threads can run __concurrently__.
 
 - The Global Interpreter lock exists in Python for simplicity, efficiency, and memory management.
 
-- Threads in parallel can perform conflicting operations on the same object in the computer's memory, which can lead to inconsistencies in the data.
+- Threads in __parallel__ can perform conflicting operations on the same object in the computer's memory, which can lead to __inconsistencies__ in the data.
 
 - __C__ runs behind the scenes with Python.
 
