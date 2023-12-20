@@ -1,0 +1,297 @@
+---
+layout: default
+title:  "Threads"
+date:   2023-12-07 11:05:00 -0400
+categories: blog
+---
+
+Today, I cover __Threads__ from the [programmingexpert.io][course-site] course.
+
+""""""
+
+# Key Terms
+
+<u>Thread<u>
+
+A __thread__ is a flow of execution of your program. By default, Python will run your program in a single thread, the __main__ thread, which will execute your Python code line by line.
+
+When trying to speed up certain programs using __concurrency__, many programs choose to run multiple threads at the same time. The __threading__ package that comes pre-installed contains functions and classes that allow you to create new threads and coordinate them.
+
+The most important elements of this library are: __Thread__ and __Lock__.
+
+<u>Concurrency<u>
+
+__Concurrency__ refers to the ability for parts of a program, application or algorithm (i.e. multiple threads) to be executed simultaneously.
+
+<u>Mutex<u>
+
+A __mutex__ is a __mutually exclusive lock__ that controls the access to a section of code. Mutex's are typically used in multi-threaded programs when a section of code should only be executed by one thread at a time. If one thread has aquired the mutex all other threads must wait until that thread releases it before they can execute that locked section of code.
+
+""""""
+
+# Notes
+
+- Reminder. Avoid module naming conflicts.
+
+- One way to prevent race conditions is to use a threading lock.
+
+- Put locks on __shared__ resources.
+
+- Consider when to use locks, some type of delay(like sleep), .join() or double locks.
+
+- __.join()__ allows us to wait for a thread to finish before continuing.
+
+- We can pass a list of threads to a thread.
+
+- A __deadlock__ happens when no thread is able to run. Avoid this.
+
+- If you have two or more threads and you want to ensure that they are going to run until completion, make sure to .join() them at the end of the program. This also helps with imports.
+
+Thread Example:
+
+    from threading import Lock, Thread
+    from time import sleep
+
+    def start_game(preq=[]):
+        print("Waiting to start game.")
+        
+        for t in preq:
+            t.join()  #  waiting for prereqs to finish before moving on
+        
+        print("Started game!")
+
+    def load_assets():
+        sleep(2)
+        print("Loaded assets.")
+
+    def load_player():
+        sleep(1)
+        print("Loaded player.")
+
+    load_assets_thread = Thread(target=load_assets)
+    load_player_thread = Thread(target=load_player)
+    preq = [load_player_thread, load_assets_thread]
+
+    start_game_thread = Thread(target=start_game, args=(preq,))
+
+    load_assets_thread.start()
+    load_player_thread.start()
+
+    start_game_thread.start()
+
+""""""
+
+# Exercise One
+
+""""""
+
+What is the output of the following code?:
+
+     1 | import threading 
+     2 | from time import sleep
+     3 |  
+     4 | def t1():
+     5 |    sleep(1)
+     6 |    print("thread 1")
+     7 | 
+     8 | def t2():
+     9 |    print("thread 2")
+    10 |    sleep(1)
+    11 |
+    12 | def t3():
+    13 |    sleep(2)
+    14 |    print("thread 3")
+    15 |
+    16 | thread1 = threading.Thread(target=t1)
+    17 | thread2 = threading.Thread(target=t2)
+    18 | thread3 = threading.Thread(target=t3)
+    19 | thread1.start()
+    20 | thread2.start()
+    21 | thread3.start()
+
+<u>Answer<u>:
+
+    thread 2
+    thread 1
+    thread 3
+
+<u>Explanation<u>
+
+The code is executed as follows:
+
+1. Three threads are created and __thread1__ is started.
+
+2. The __t1__ function is called and executes __sleep(1)__. This causes the thread to yield control back to the main thread.
+
+3. The main thread starts __thread2__ and the __t2__ function is called. __print("thread 2")__ is then executed followed by __sleep(1)__. This causes the thread to yield control back to the main thread (recall, __thread1__ is still sleeping).
+
+4. The main thread starts __thread3__ and the __t3__ function is called. __sleep(2)__ is executed and control is yeilded back to the main thread (the only one not sleeping).
+
+5. The main thread has no more code to execute and it waits for another thread to stop sleeping before yielding control to it.
+
+6. __thread1__ finishes sleeping and prints __"thread 1"__.
+
+7. __thread2__ finishes sleeping and yields control back to the main thread as it is now finished.
+
+8. The main thread waits for __thread3__ to finish sleeping and yields control to it where it prints __"thread 3"__.
+
+9. All threads are finished and program ends!
+
+""""""
+
+# Exercise Two - Starting Threads
+
+""""""
+
+Start, stop and join the existing functions as threads in the program such that __lst = [1, 4, 3, 5, 3]__ at the end of the program. Use multithreading, create at least three threads and use both functions.
+     
+<u>Answer<u>:
+
+    import threading
+    from time import sleep
+    import math
+
+
+    def append_values(lst, values=[], delay=1):
+        for value in values:
+            lst.append(value)
+            sleep(math.ceil(abs(delay)))
+
+
+    def append_integer(lst, integer):
+        lst.append(integer)
+
+
+    lst = []
+
+    # create the threads
+    thread1 = threading.Thread(target=append_values, args=(lst, [1, 3, 5], 1))
+    thread2 = threading.Thread(target=append_integer, args=(lst, 4))
+    thread3 = threading.Thread(target=append_integer, args=(lst, 3))
+
+    # start threads
+    thread1.start()
+    thread2.start()
+
+    # wait for thread1 to finish
+    thread1.join()
+
+    # start last thread
+    thread3.start()
+
+""""""
+
+# Exercise Three - Powers of Two Multi-Threaded
+
+""""""
+
+Write a program that uses multiple threads to gather the powers of two included in a range. The program must use at least __2__ threads, each responsible for a portion of the range. You are given a function called __is_power_of_two__ to start with, which returns __True__ if the given number is a power of two and __False__ otherwise.
+
+Example Setup:
+
+    RANGE_START = 0
+    RANGE_END = 1000
+
+Example Output:
+
+    powers_of_two = [2, 4, 8, 16, 32, 64, 128, 256, 512]
+
+<u>Answer<u>:
+
+    import threading
+
+    RANGE_START = 0
+    RANGE_END = 1000
+
+    """
+    At the end of the program, this variable needs to contain all of the powers
+    of 2 within the interval [RANGE_START, RANGE_END].
+    """
+
+    def is_power_of_two(x):
+        if x == 0:
+            return False
+        return (x & (x - 1)) == 0
+
+    powers_of_two = set()
+    set_lock = threading.Lock()
+
+
+    def find_powers_of_two(iter):
+        for item in iter:
+            if is_power_of_two(item):
+                set_lock.acquire()
+                powers_of_two.add(item)
+                set_lock.release()
+
+
+    # create threads
+    thread1 = threading.Thread(target=find_powers_of_two, args=(range(RANGE_START, 200),))
+    thread2 = threading.Thread(target=find_powers_of_two, args=(range(200, 400),))
+    thread3 = threading.Thread(target=find_powers_of_two, args=(range(400, 600),))
+    thread4 = threading.Thread(target=find_powers_of_two, args=(range(600, 800),))
+    thread5 = threading.Thread(target=find_powers_of_two, args=(range(800, RANGE_END),))
+
+    # start threads
+    thread1.start()
+    thread2.start()
+    thread3.start()
+    thread4.start()
+    thread5.start()
+
+    # wait for threads to finish
+    thread1.join()
+    thread2.join()
+    thread3.join()
+    thread4.join()
+    thread5.join()
+
+""""""
+
+# Exercise Four - Foo Bar Multi-Threaded
+
+""""""
+
+Write a program that asks the user to input a positve integer __n__ and uses multiple threads to print __"foo"__ then __"bar"__ alternatively __n__ times. The program should print everything on the same line. The program must use at least __2__ threads, one thread responsible for printing __"foo"__ and another for printing __"bar"__. Assume the input from the user for __n__ will always be a positive integer.
+
+Sample Program Execution:
+
+    Enter a positive integer: 4
+    "foobarfoobarfoobarfoobar"
+
+<u>Answer<u>:
+
+    from threading import Thread, Lock
+
+    def foo(n, foo_lock, bar_lock):
+        for _ in range(n):
+            foo_lock.acquire()
+            print(end="foo")
+            bar_lock.release()
+
+
+    def bar(n, foo_lock, bar_lock):
+        for _ in range(n):
+            bar_lock.acquire()
+            print(end="bar")
+            foo_lock.release()
+
+
+    foo_lock = Lock()
+    bar_lock = Lock()
+    bar_lock.acquire()
+
+    n = int(input("Enter a positive integer: "))
+
+    thread1 = Thread(target=foo, args=(n, foo_lock, bar_lock))
+    thread2 = Thread(target=bar, args=(n, foo_lock, bar_lock))
+
+    thread1.start()
+    thread2.start()
+
+    thread1.join()
+    thread2.join()
+
+""""""
+
+[course-site]: https://www.programmingexpert.io/index
