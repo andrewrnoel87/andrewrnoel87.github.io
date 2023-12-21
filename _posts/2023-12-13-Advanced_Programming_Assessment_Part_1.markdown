@@ -20,9 +20,8 @@ See the sample input for an example.
 
 Sample Input #1:
 
-    *args = [[-5, 2, 3, 4, 5], [1, 3, 5, 6, 7], [-9, -8, 10]]
-
-    # arguments will be passed postionally to the function like this: positive_even_squares([-5, 2, 3, 4, 5], [1, 3, 5, 6, 7], [-9, -8, 10])
+    args = [[-5, 2, 3, 4, 5], [1, 3, 5, 6, 7], [-9, -8, 10]]
+    positive_even_squares(*args)  # arguments will be passed postionally to the function like this: positive_even_squares([-5, 2, 3, 4, 5], [1, 3, 5, 6, 7], [-9, -8, 10])
 
 Sample Output #1:
 
