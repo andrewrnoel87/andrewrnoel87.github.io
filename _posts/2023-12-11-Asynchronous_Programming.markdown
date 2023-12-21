@@ -151,6 +151,61 @@ Async __scheduling__ tasks Example:
     #           4
     #           5
 
+Async __asyncio.gather__ Example:
+
+    import asyncio
+
+    async def print_values(values, delay):
+        for item in values:
+            print(item)
+            await asyncio.sleep(delay)
+
+        return delay
+
+    async def main():
+        values = await asyncio.gather(print_values([1, 3, 5], 0.2), print_values([2, 4], 0.3))
+
+        print(values)
+
+    asyncio.run(main())
+
+    # output:
+    #           1
+    #           2
+    #           3
+    #           4
+    #           5
+    #           [0.2, 0.3]
+
+Async __Generator__ Example:
+
+    import asyncio
+
+    async def gen(n):
+        for i in range(n):
+            yield i
+            await asyncio.sleep(0.5)
+
+    async def main():
+        async for i in gen(10):  #  async for, makes the magic happen
+            print(i)
+
+    asyncio.run(main())
+    
+Awaiting a __class__ method Example:
+
+    import asyncio
+
+    class Test:
+        @staticmethod
+        async def test():  #  coroutine defined in a class
+            print("hi")
+
+    async def main():
+        await Test.test()
+
+    asyncio.run(main())
+
 """"""
 
 # Exercise One - Add One Asynchronous
