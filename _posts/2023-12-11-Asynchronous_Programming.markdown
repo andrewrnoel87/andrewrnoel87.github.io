@@ -19,23 +19,19 @@ __Asynchronous programming__ in Python is a programming paradigm that enables be
 
 __Coroutine__ is any function that has the __async__ keyword before it. It is called a coroutine because it is capable of cooperatively running with other __tasks__ and __coroutines__. It is able to pause its execution in the middle before returning some value and give control to another coroutine. Coroutines can be scheduled as a __task__. That __task__ will need to be __awaited__.
 
+<u>Task<u>
+
+A __Task__ is a wrapped coroutine that can be executed independently, allowing the wrapped coroutine to execute in the background.
+
 """"""
 
 # Notes
-
-- All coroutines must be __awaited__ in some way.
-
-- In Python, an asynchronous program that does not explicitly define other threads runs in one thread. The async paradigm enables better concurreny and simpler programs and is recommended to use over standard multithreading.
-
-- The most straightforward definition of a coroutine is a function that can suspend its execution and resume later. Coroutines are functions that can yield their control periodically or when in idle to allow other coroutines to run. This is how concurrency is implemented in a single thread.
-
-- The __await__ keyword can only be used inside of a function that is defined with __async__/ a coroutine.
 
 - In asynchronous programming, you no longer need to run code strictly based off of the clock speed of the processor. You setup an event loop.
 
 - An __event loop__ lets you schedule tasks to fun in the future. It allows you to await one block of code before doing another block.
 
-- Async was introduced in Python as an alternative to threading. Async is preferred when applicable because async tends to be more understandable.
+- Async was introduced in Python as an alternative to threading. Async is preferred when applicable because async tends to be more understandable. Asynchronous programming is Python's version of __multitasking__.
 
 - Async code runs in __one__ thread.
 
@@ -43,17 +39,23 @@ __Coroutine__ is any function that has the __async__ keyword before it. It is ca
 
 - Only use the __await__ keyword inside an __async__ function.
 
+- All coroutines must be __awaited__ in some way.
+
+- You do not get values from __coroutines__ until they are __awaited__.
+
 - The entry point of an async function is __asyncio.run(function_name())__. A coroutine needs to be run with this. This sets up the event loop.
+
+- Creating a __task__ is known as creating a __future__.
 
 - __Tasks__ and __coroutines__ are __awaitable__.
 
 - __ayncio.gather(*args)__ schedules its arguments as tasks and runs them concurrently.
 
-- Creating a __task__ is known as creating a __future__.
-
 - You can create an __asynchronous generator__ by using an __async for__ keyword.
 
-- You do not get values from __coroutines__ until they are __awaited__.
+- In Python, an asynchronous program that does not explicitly define other threads runs in one thread. The async paradigm enables better concurreny and simpler programs and is recommended to use over standard multithreading.
+
+- The most straightforward definition of a coroutine is a function that can suspend its execution and resume later. Coroutines are functions that can yield their control periodically or when in idle to allow other coroutines to run. This is how concurrency is implemented in a single thread.
 
 Async __await__ Example:
 
