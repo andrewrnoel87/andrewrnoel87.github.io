@@ -15,7 +15,7 @@ Today, I cover __Divide and Conquer__ from the [programmingexpert.io][course-sit
 
 - Solving the smaller problems should lead to solving the larger problem.
 
-- Example. Split up program into classes and functions.
+- Example. Split-up the program into classes and functions.
 
 """"""
 
