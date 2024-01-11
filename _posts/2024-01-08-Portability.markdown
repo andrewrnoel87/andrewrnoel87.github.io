@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "portability"
+title:  "Portability"
 date:   2024-01-08 11:05:00 -0400
 categories: blog
 ---
