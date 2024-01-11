@@ -1,0 +1,38 @@
+---
+layout: default
+title:  "Coupling"
+date:   2023-12-28 11:05:00 -0400
+categories: blog
+---
+
+Today, I cover __Coupling__ from the [programmingexpert.io][course-site] course.
+
+""""""
+
+# Key Terms
+
+<u>Coupling<u>
+
+__Coupling__ refers to the degree of interdependence between things. In programming, it is typically desirable to __reduce__ coupling. There are many different types of coupling.
+
+- __Content__: a component secretly modifies the internal data of another component. Example. You a Deck class representing a deck of cards. You want the card object to exist independent of the deck object. You do not want the deck object to be modifying the card object. It would also be like modifying a private variable in Python with the leading underscore even though you are not supposed to.
+
+- __Stamp__: an argument type of a method is an application class. Occurs when the parameter type that you are expecting in a function or a method is too specific. Using a custom class when you should be using an interface or abstract class. Example. Using a Reptile class when we should be using an Animal class.
+
+- __Routine Call__: A routine calling another routine. Most likely to exist in many places, but we want to reduce it where we can.
+
+- __Type Use__: Use of globally defined data types. Similar to stamp coupling. Should be using a more general class or more general type like an interface or an abstract base class. This is not confined to the bounds of parameters.
+
+- __Inclusion/Import__: importing unnecessary components. Avoid import all.
+
+- __External__: a dependency on something outside of the scope of the system like an operating system, shared library, hardware etc. External coupling really limits where your system is going to be runnable. Example, relying on the Android operating systems, Windows, or macOS. Preferred approach would be a web application or something that works on mulitple operating systems.
+
+""""""
+
+# Notes
+
+- Reducing coupling makes code easier to understand and it also makes it so that if you make a change in one place, you will be less likely to need to change it somewhere else.
+
+""""""
+
+[course-site]: https://www.programmingexpert.io/index

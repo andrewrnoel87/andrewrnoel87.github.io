@@ -1,0 +1,54 @@
+---
+layout: default
+title:  "Cohesion"
+date:   2023-12-27 11:05:00 -0400
+categories: blog
+---
+
+Today, I cover __Cohesion__ from the [programmingexpert.io][course-site] course.
+
+""""""
+
+# Key Terms
+
+<u>Cohesion<u>
+
+__Cohesion__ refers to the degree to which things grouped together are similar. Usually, when programming, you would like to __increase__ cohesion. There are many different types of cohesion.
+
+The following concepts are listed from stronger cohesion to weaker cohesion.
+
+- __Functional__: facilities are kept together that perform only one computation with no side effects. Note. Global keywords break functional cohesion. Instead, try passing a list and modifying that in place. Making a function to call other functions in sequence could be beneficial.
+
+- __Layer__: related services are kept together. A strict hierarchy is enforced. High level features access lower level features. Example. We do not see what the sort() method is doing. We have services going from high to low not the other way around. Higher layers are simplier/easier to use, where low is much more complex. 
+
+- __Communicational__: facilities for operating on the same data are kept together. Example, classes. All methods related to lists are kept in the list class.
+
+- __Sequential__: a set of procedures, which work in sequence to perform some computation are kept together. Meaning output from one procedure is usually input to the other. An example of this is a data pre-processing pipeline. Remove swear words from a text, then remove any duplicate words, then remove punctuation and so on. Keep these functions together.
+
+- __Procedural__: a set of procedures, which are called one after another are kept together. These are not necessarily working on the same data or computation. Order is important so they are kept together.
+
+- __Temporal__: procedures used in the same general phase of execution like initialization and cleanup are kept together. Example... Try, Except, and Finally blocks. Opening and closing a file being kept in the same are is also an example.
+
+- __Utility__: related utilities are kept together (when there is no way to group using strong cohesion). Example. Grouping helper functions in a file.
+
+""""""
+
+# Notes
+
+- High cohesion is keeping related things together and unrelated things out. Example. The math module.
+
+- Cohesion can be applied at a module level, package level, file level, with functions and classes as well.
+
+- Seperating front-ends and back-ends increases cohesion.
+
+- High cohesion keeps things organized, which can help with debugging.
+
+- The bigger the project, the more important it is to have cohesion.
+
+- Keep only things in a function that are related to the name of that function.
+
+- A goal of __refactoring__ can be to increase cohesion.
+
+""""""
+
+[course-site]: https://www.programmingexpert.io/index
