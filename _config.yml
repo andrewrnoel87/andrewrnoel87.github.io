@@ -30,9 +30,9 @@ github_username:  andrewrnoel87
 
 # Build settings
 theme: minima
-plugins:
+#plugins:
   #- jekyll-feed
-  - jekyll-sitemap
+  #- jekyll-sitemap
   #- jekyll-seo-tag
 
 # Exclude from processing.
